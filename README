@@ -1,0 +1,5 @@
+This is a nice starter for making games in C with software rendering techniques
+It uses SDL2 to handle inputs, and create a window texture that lets you manipulate the pixels of the window, without worrying about different display pixel formats
+This is great for people who want to make software rendering style programs such as raycasters and doom / build engine style games, using pretty much the same techniques that they used back then, but with the modern advantages of compatibility
+
+If you do make a project with this, I would love to see it!
