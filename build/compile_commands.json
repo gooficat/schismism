@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/User/Documents/Schism/build",
+  "command": "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Schism.dir/includes_C.rsp -g -Wall -Werror -o CMakeFiles\\Schism.dir\\src\\e_main.c.obj -c C:\\Users\\User\\Documents\\Schism\\src\\e_main.c",
+  "file": "C:/Users/User/Documents/Schism/src/e_main.c",
+  "output": "CMakeFiles/Schism.dir/src/e_main.c.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/Schism/build",
+  "command": "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Schism.dir/includes_C.rsp -g -Wall -Werror -o CMakeFiles\\Schism.dir\\src\\g_data.c.obj -c C:\\Users\\User\\Documents\\Schism\\src\\g_data.c",
+  "file": "C:/Users/User/Documents/Schism/src/g_data.c",
+  "output": "CMakeFiles/Schism.dir/src/g_data.c.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/Schism/build",
+  "command": "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Schism.dir/includes_C.rsp -g -Wall -Werror -o CMakeFiles\\Schism.dir\\src\\g_main.c.obj -c C:\\Users\\User\\Documents\\Schism\\src\\g_main.c",
+  "file": "C:/Users/User/Documents/Schism/src/g_main.c",
+  "output": "CMakeFiles/Schism.dir/src/g_main.c.obj"
+},
+{
+  "directory": "C:/Users/User/Documents/Schism/build",
+  "command": "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/Schism.dir/includes_C.rsp -g -Wall -Werror -o CMakeFiles\\Schism.dir\\src\\r_main.c.obj -c C:\\Users\\User\\Documents\\Schism\\src\\r_main.c",
+  "file": "C:/Users/User/Documents/Schism/src/r_main.c",
+  "output": "CMakeFiles/Schism.dir/src/r_main.c.obj"
+}
+]

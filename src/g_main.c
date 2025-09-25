@@ -2,7 +2,9 @@
 
 #include "r_main.h"
 
-struct state state;
+struct game_state state;
+struct weapon_manager weaponManager;
+struct entity player;
 
 void g_terminate() {
     state.running = false;
@@ -11,14 +13,43 @@ void g_terminate() {
 }
 
 void g_update() {
-    
+    vec2_s vel = { 0 };
+    if (state.keys[SDL_SCANCODE_W]) {
+        vel.y += player.speed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_S]) {
+        vel.y -= player.speed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_A]) {
+        vel.x -= player.speed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_D]) {
+        vel.x += player.speed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_LEFT]) {
+        player.rot -= player.rot_speed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_RIGHT]) {
+       player.rot += player.rot_speed * state.deltaTime;
+    }
+
+    if (vel.x && vel.y) {
+        vel.x /= 2;
+        vel.y /= 2;
+    }
+
+    player.vel = vel;
+
+    e_move_and_slide(&player);
 }
 
-void main() {
-    state.running = true;
+int main() {
+    player.pos.x = 2;
+    player.pos.y = 2;
+    player.speed = 4.0f;
+    player.rot_speed = 1.5f;
 
     SDL_Init(SDL_INIT_VIDEO);
-
 
     state.scrW = SCR_W;
     state.scrH = SCR_H;
@@ -30,8 +61,11 @@ void main() {
     if (!state.renderer) printf("renderer failed to init\n");
 
     r_init();
+    d_init("../res/lvl0.txt");
     
     static SDL_Event event;
+
+    state.running = true;
 
     static double lastFrameTime;
     while (state.running) {
@@ -61,4 +95,5 @@ void main() {
             state.deltaTime = state.targetFrameTime;
         }
     }
+    return 0;
 }
