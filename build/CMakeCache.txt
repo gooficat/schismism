@@ -257,6 +257,9 @@ SDL2_DIR:PATH=C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2
 //The directory containing a CMake configuration file for SDL2_Image.
 SDL2_Image_DIR:PATH=C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image
 
+//The directory containing a CMake configuration file for SDL2_Net.
+SDL2_Net_DIR:PATH=C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net
+
 //Value Computed by CMake
 Schism_BINARY_DIR:STATIC=C:/Users/User/Documents/Schism/build
 

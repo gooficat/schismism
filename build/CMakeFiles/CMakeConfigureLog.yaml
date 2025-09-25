@@ -12252,3 +12252,94 @@ events:
         - "C:/Users/User/Documents/msys64/ucrt64"
         - "C:/Program Files (x86)/Schism"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "SDL2_Net"
+    configs:
+      -
+        filename: "SDL2_NetConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "sdl2_net-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "SDL2_Net"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/SDL2_NetConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/sdl2_net-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/User/Documents/msys64/ucrt64/SDL2_NetConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/User/Documents/msys64/ucrt64/sdl2_net-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/SDL2_NetConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config.cmake"
+      mode: "config"
+      version: "2.2.0"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
+        - "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
+        - "c:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
+        - "c:\\Users\\User\\Documents\\msys64\\usr\\bin"
+        - "C:/Program Files/Common Files/Oracle/Java/javapath"
+        - "C:\\Windows\\system32"
+        - "C:/Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:/Users/User/pypy3.11-v7.3.20-win64"
+        - "C:\\Users\\User\\Documents\\tcc"
+        - "C:/Users/User/Documents/msys64/ucrt64/bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Users/User/Documents/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Users/User/Documents/msys64/ucrt64"
+        - "C:/Program Files (x86)/Schism"
+...

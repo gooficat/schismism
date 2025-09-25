@@ -26,6 +26,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findwebp.cmake"
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config.cmake"
+  "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config-version.cmake"
+  "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config.cmake"
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-release.cmake"
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-version.cmake"
   "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config.cmake"

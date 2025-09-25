@@ -6,6 +6,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_Image REQUIRED)
+find_package(SDL2_Net REQUIRED)
 
 file(GLOB SOURCES src/*.c)
 
@@ -16,4 +17,5 @@ target_compile_options(Schism PRIVATE -Wall -Werror)
 target_link_libraries(Schism
     SDL2
     SDL2_Image
+    SDL2_Net
 )

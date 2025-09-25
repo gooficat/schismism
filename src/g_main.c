@@ -34,8 +34,8 @@ void g_update() {
     }
 
     if (vel.x && vel.y) {
-        vel.x /= 2;
-        vel.y /= 2;
+        vel.x *= 0.7071f;
+        vel.y *= 0.7071f;
     }
 
     player.vel = vel;
@@ -44,10 +44,10 @@ void g_update() {
 }
 
 int main() {
-    player.pos.x = 2;
-    player.pos.y = 2;
-    player.speed = 4.0f;
-    player.rot_speed = 1.5f;
+    player.pos.x = 7.5f;
+    player.pos.y = 7.5f;
+    player.speed = 2.5f;
+    player.rot_speed = 1.25f;
 
     SDL_Init(SDL_INIT_VIDEO);
 

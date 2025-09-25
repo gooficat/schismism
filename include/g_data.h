@@ -14,6 +14,7 @@
 
 #include "g_main.h"
 
+#define wallTextureRes 32
 
 struct image {
 	SDL_Texture* texture;
@@ -23,7 +24,8 @@ struct image {
 struct level {
 	uint8_t* data;
 	uint8_t width, length;
-	struct image* textures;
+	uint32_t** textures; //using surface for raw pixel 
+	uint8_t textureCount;
 	uint8_t floorTexture;
 	// eventually could add entity arrays here
 };

@@ -336,6 +336,24 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FeatureSummary.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

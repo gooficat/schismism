@@ -4,6 +4,7 @@ SDL_Texture *renderTexture, *hudTexture;
 
 uint32_t *pixels;
 
+
 void r_init() {
     pixels = (uint32_t*)malloc(sizeof(uint32_t) * state.scrW * state.scrH);
 
@@ -71,18 +72,18 @@ void r_render() {
             if (sideDis.x < sideDis.y) {
                 sideDis.x += deltaDis.x;
                 cell.x += step.x;
-                side = 1;
+                side = 0;
             }
             else {
                 sideDis.y += deltaDis.y;
                 cell.y += step.y;
-                side = 0;
+                side = 1;
             }
             if (currentLevel.data[cell.y * currentLevel.width + cell.x] != 0) {
                 hit = true;
             }
         }
-        float perpWallDis = (side) ? sideDis.x - deltaDis.x : sideDis.y - deltaDis.y;
+        float perpWallDis = (side) ? sideDis.y - deltaDis.y : sideDis.x - deltaDis.x;
 
         int lineHeight = (int)(state.scrH / perpWallDis);
 
@@ -93,10 +94,31 @@ void r_render() {
         // r_setVLine(x, y0, y1, r_rgba(0, 255, 150, a));
 
         vec2_s wall;
-        wall.x = ((side) ? player.pos.x + perpWallDis * rayDir.x : player.pos.y + perpWallDis * rayDir.y) - floor(wall.x);
+        wall.x = (side) ? player.pos.x + perpWallDis * rayDir.x : player.pos.y + perpWallDis * rayDir.y;
+        wall.x -= floor(wall.x);
 
         vec2i_s tex;
-        tex.x = wall.x * (float)wallTextureRes;
+        tex.x = (int)(wall.x * (float)wallTextureRes);
+        if ((side == 0 && rayDir.x > 0) || (side == 1 && rayDir.y < 0)) tex.x = wallTextureRes - tex.x - 1;
+
+        float inc = 1.0f * wallTextureRes / lineHeight;
+
+        float texPos = (y0 - state.scrH / 2 + lineHeight / 2) * inc;
+
+        int texture = currentLevel.data[cell.y * currentLevel.width + cell.x];
+        
+        for (int y = y0; y < y1; y++) {
+            tex.y = (int)texPos & (wallTextureRes - 1);
+            texPos += inc;
+         
+            uint32_t color = currentLevel.textures[texture][tex.y * wallTextureRes + tex.x];
+         
+            r_setPixel(x, y, color);
+        }
+    }
+    for (int i = 0; i < wallTextureRes; i++) {
+        for (int j = 0; j < wallTextureRes; j++) {
+        }
     }
 
     SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
