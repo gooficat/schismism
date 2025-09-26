@@ -3,17 +3,24 @@
 SDL_Texture *renderTexture, *hudTexture;
 
 uint32_t *pixels;
+double *zBuffer;
 
+#define deFloat 256
 
 void r_init() {
     pixels = (uint32_t*)malloc(sizeof(uint32_t) * state.scrW * state.scrH);
+
+    zBuffer = malloc(sizeof(double) * state.scrW);
 
     renderTexture = SDL_CreateTexture(state.renderer, SDL_PIXELFORMAT_RGBA32, SDL_TEXTUREACCESS_STREAMING, state.scrW, state.scrH);
     if (!renderTexture) printf("render texture init failed\n");
     SDL_RenderSetLogicalSize(state.renderer, state.scrW, state.scrH);
 }
 
-void r_setPixel(int x, int y, uint32_t c) { pixels[y * state.scrW + x] = c; }
+void r_setPixel(int x, int y, uint32_t c) {
+    if (x < 0 || x >= state.scrW || y < 0 || y >= state.scrH) return;
+    pixels[y * state.scrW + x] = c;
+}
 
 #define r_setRect(x, y, w, h, c) for (int j = 0; j < h; j++) for (int i = 0; i < w; i++) r_setPixel(x+i, y+j, c)
 #define r_setSquare(x, y, s, c) for (int i = 0; i < s; i++) for (int j = 0; j < s; j++) r_setPixel(x+i, y+j, c)
@@ -22,13 +29,13 @@ void r_setPixel(int x, int y, uint32_t c) { pixels[y * state.scrW + x] = c; }
 #define r_rgba(r, g, b, a) (uint32_t)(((r & 0xFF) << 24) + ((g & 0xFF) << 16) + ((b & 0xFF) << 8) + (a & 0xFF))
 
 void r_render() {
-    memset(pixels, 0, sizeof(uint32_t) * state.scrW * state.scrH);
-    
+    memset(pixels, 0xFF444444, sizeof(uint32_t) * state.scrW * state.scrH/2);
+    memset(&pixels[state.scrW * state.scrH / 2], 0, sizeof(uint32_t) * state.scrW * state.scrH/2);
     vec2_s dir, plane;
-    dir.x = sinf(player.rot);
-    dir.y = cosf(player.rot);
-    plane.x = cosf(-player.rot) * 0.66f;
-    plane.y = sinf(-player.rot) * 0.66f;
+    dir.x = sinf(player.rot); //-1 in lodev tutorial, 0 in mine
+    dir.y = cosf(player.rot); //0 in lodev tutorial, 1 in mine
+    plane.x = cosf(-player.rot) * 0.66f; //0 in lodev tutorial -0.66f in mine
+    plane.y = sinf(-player.rot) * 0.66f; //-0.66 in lodev tutorial, 0 in mine
     
     for (int x = 0; x < state.scrW; x++) {
         vec2i_s cell = {
@@ -110,16 +117,55 @@ void r_render() {
         for (int y = y0; y < y1; y++) {
             tex.y = (int)texPos & (wallTextureRes - 1);
             texPos += inc;
-         
-            uint32_t color = currentLevel.textures[texture][tex.y * wallTextureRes + tex.x];
-         
-            r_setPixel(x, y, color);
+            
+            r_setPixel(x, y, currentLevel.textures[texture][tex.y * wallTextureRes + tex.x]);
+            zBuffer[x] = perpWallDis;
         }
     }
-    for (int i = 0; i < wallTextureRes; i++) {
-        for (int j = 0; j < wallTextureRes; j++) {
+    
+    vec2_s spritePos = {
+        enemy.pos.x - player.pos.x,
+        enemy.pos.y - player.pos.y
+    };
+    
+    float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
+
+    vec2_s spriteTransform = {
+        invDet * (dir.y * spritePos.x - dir.x * spritePos.y),
+        invDet * (-plane.y * spritePos.x + plane.x * spritePos.y)
+    };
+
+    int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
+
+    int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y)));
+
+    vec2i_s spriteDrawStart = {
+        clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+        clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+    };
+    vec2i_s spriteDrawEnd = {
+        clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+        clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+    };
+
+    for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
+        vec2i_s texPos;
+        texPos.x = (int)(256 * (x - (-spriteScreenSize / 2 + spriteScreenPosX)) * spriteTextureRes / spriteScreenSize) / 256;
+     
+        if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
+            for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
+                int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
+                texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
+                uint32_t color = currentLevel.sprites[enemy.spriteId][texPos.y * spriteTextureRes + texPos.x];
+                if (color) {
+                    r_setPixel(x, y, color);
+                }
+            }
         }
     }
+    //r_setPixel(x, y, currentLevel.sprites[enemy.spriteId][y * spriteTextureRes + x]);
+
+    
 
     SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
     SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
@@ -127,8 +173,13 @@ void r_render() {
     SDL_RenderCopy(state.renderer, 
         weaponManager.weapons[weaponManager.currentWeapon].textures[weaponManager.weapons[weaponManager.currentWeapon].frame].texture,
         NULL,
-        &weaponManager.weapons[weaponManager.currentWeapon].textures[weaponManager.weapons[weaponManager.currentWeapon].frame].rect
+        &weaponManager.weapons[weaponManager.currentWeapon].rect
     );
     
     SDL_RenderPresent(state.renderer);
+}
+
+void r_destroy() {
+    free(pixels);
+    free(zBuffer);
 }

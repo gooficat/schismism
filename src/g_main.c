@@ -6,6 +6,8 @@ struct game_state state;
 struct weapon_manager weaponManager;
 struct entity player;
 
+struct entity enemy;
+
 void g_terminate() {
     state.running = false;
     SDL_DestroyRenderer(state.renderer);
@@ -27,10 +29,21 @@ void g_update() {
         vel.x += player.speed * state.deltaTime;
     }
     if (state.keys[SDL_SCANCODE_LEFT]) {
-        player.rot -= player.rot_speed * state.deltaTime;
+        player.rot -= player.rotSpeed * state.deltaTime;
     }
     if (state.keys[SDL_SCANCODE_RIGHT]) {
-       player.rot += player.rot_speed * state.deltaTime;
+       player.rot += player.rotSpeed * state.deltaTime;
+    }
+    if (state.keys[SDL_SCANCODE_RSHIFT] && !weaponManager.weapons[weaponManager.currentWeapon].firing) {
+        weaponManager.weapons[weaponManager.currentWeapon].firing = true;
+        weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
+        weaponManager.weapons[weaponManager.currentWeapon].frame = 1;
+    }
+    if (state.keys[SDL_SCANCODE_RCTRL] && !weaponManager.weapons[weaponManager.currentWeapon].firing) {
+        weaponManager.currentWeapon = (weaponManager.currentWeapon + 1) % weaponManager.weaponCount;
+        weaponManager.weapons[weaponManager.currentWeapon].firing = true;
+        weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
+        weaponManager.weapons[weaponManager.currentWeapon].frame = 1;
     }
 
     if (vel.x && vel.y) {
@@ -41,20 +54,32 @@ void g_update() {
     player.vel = vel;
 
     e_move_and_slide(&player);
+
+    if (weaponManager.weapons[weaponManager.currentWeapon].firing) {
+        if (SDL_GetTicks() - weaponManager.weapons[weaponManager.currentWeapon].frameTime >= weaponManager.weapons[weaponManager.currentWeapon].timePerFrame) {
+            weaponManager.weapons[weaponManager.currentWeapon].frame++;
+            weaponManager.weapons[weaponManager.currentWeapon].frame %= weaponManager.weapons[weaponManager.currentWeapon].textureCount;
+            weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
+            if (!weaponManager.weapons[weaponManager.currentWeapon].frame) {
+                weaponManager.weapons[weaponManager.currentWeapon].firing = false;
+            }
+        }
+    }
 }
 
 int main() {
     player.pos.x = 7.5f;
     player.pos.y = 7.5f;
-    player.speed = 2.5f;
-    player.rot_speed = 1.25f;
+    player.speed = 1.5f;
+    player.rotSpeed = player.speed;
+
 
     SDL_Init(SDL_INIT_VIDEO);
 
     state.scrW = SCR_W;
     state.scrH = SCR_H;
 
-    state.targetFrameTime = 1.0/60.0;
+    state.targetFrameTime = 1.0/TARGET_FPS;
 
     SDL_CreateWindowAndRenderer(SCR_W, SCR_H, SDL_WINDOW_SHOWN, &state.window, &state.renderer);
     if (!state.window) printf("window failed to init\n");
@@ -64,6 +89,12 @@ int main() {
     d_init("../res/lvl0.txt");
     
     static SDL_Event event;
+
+
+
+    enemy.pos.x = 6.5f;
+    enemy.pos.y = 6.5f;
+    enemy.spriteId = 0;
 
     state.running = true;
 
@@ -90,8 +121,8 @@ int main() {
         r_render();
 
         state.deltaTime = (SDL_GetTicks() - lastFrameTime) / 1000.0;
-        if (lastFrameTime < state.targetFrameTime) {
-            SDL_Delay(state.targetFrameTime - state.deltaTime * 1000.0);
+        if (state.deltaTime < state.targetFrameTime) {
+            SDL_Delay((state.targetFrameTime - state.deltaTime) * 1000.0);
             state.deltaTime = state.targetFrameTime;
         }
     }

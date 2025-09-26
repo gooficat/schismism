@@ -13,6 +13,8 @@
 #define SCR_W 960
 #define SCR_H 480
 
+#define TARGET_FPS 30
+
 extern struct game_state {
     SDL_Window* window;
     SDL_Renderer* renderer;
@@ -27,10 +29,13 @@ extern struct weapon_manager {
     struct weapon *weapons;
     enum {
         UNARMED = 0,
-        SHOTGUN = 1
+        SHOTGUN = 1,
+        AR = 2
     } currentWeapon;
     uint8_t weaponCount;
 } weaponManager;
+
+extern struct entity enemy;
 
 extern struct entity player;
 

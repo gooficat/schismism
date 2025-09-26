@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/Schism.dir/includes_C.rsp
 
-C_FLAGS = -g -Wall -Werror
+C_FLAGS = -O2 -g -DNDEBUG -Wall -Werror
 

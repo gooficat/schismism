@@ -1,3 +1,3 @@
 C:\Users\User\Documents\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\Schism.dir/objects.a
 C:\Users\User\Documents\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Schism.dir/objects.a @CMakeFiles\Schism.dir\objects1.rsp
-c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Schism.dir/objects.a -Wl,--no-whole-archive -o Schism.exe -Wl,--out-implib,libSchism.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Schism.dir\linkLibs.rsp
+c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe -O2 -g -DNDEBUG -Wl,--whole-archive CMakeFiles\Schism.dir/objects.a -Wl,--no-whole-archive -o Schism.exe -Wl,--out-implib,libSchism.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Schism.dir\linkLibs.rsp

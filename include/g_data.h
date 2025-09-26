@@ -15,10 +15,10 @@
 #include "g_main.h"
 
 #define wallTextureRes 32
+#define spriteTextureRes 32
 
 struct image {
 	SDL_Texture* texture;
-	SDL_Rect rect;
 };
 
 struct level {
@@ -27,7 +27,9 @@ struct level {
 	uint32_t** textures; //using surface for raw pixel 
 	uint8_t textureCount;
 	uint8_t floorTexture;
-	// eventually could add entity arrays here
+	struct entity* entities;
+	uint32_t** sprites;
+	uint8_t spriteCount;
 };
 
 extern struct level currentLevel;

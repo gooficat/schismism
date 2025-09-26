@@ -5,9 +5,9 @@ struct level currentLevel;
 void d_loadImageSurface(const char* path, uint32_t** pixels) {
 	SDL_Surface* trueSurface = IMG_Load(path);
 	SDL_Surface* surface = SDL_ConvertSurfaceFormat(trueSurface, SDL_PIXELFORMAT_RGBA32, 0);
- 	*pixels = calloc(32 * 32, sizeof(uint32_t*));
+ 	*pixels = calloc(wallTextureRes * wallTextureRes, sizeof(uint32_t));
 	///*pixels = (uint32_t*)surface->pixels;
-	memcpy(*pixels, (uint32_t*)surface->pixels, sizeof(uint32_t*) * wallTextureRes * wallTextureRes);
+	memcpy(*pixels, (uint32_t*)surface->pixels, sizeof(uint32_t) * wallTextureRes * wallTextureRes);
 	SDL_FreeSurface(trueSurface);
 	SDL_FreeSurface(surface);
 }
@@ -31,10 +31,30 @@ void d_init(const char* file) {
 
 	IMG_Init(IMG_INIT_PNG);
 
-	weaponManager.weapons = malloc(sizeof(struct weapon) * 2);
-	weaponManager.weaponCount = 2;
+	weaponManager.weapons = malloc(sizeof(struct weapon) * 3);
+	weaponManager.weaponCount = 3;
 
-	weaponManager.currentWeapon = SHOTGUN;
+	weaponManager.currentWeapon = AR;
+	
+	weaponManager.weapons[UNARMED] = (struct weapon){
+		.textures = malloc(sizeof(struct image) * 5),
+		.textureCount = 5,
+		.magSize = 2,
+		.bullets = 2,
+		.firing = false,
+		.frame = 0
+	};
+	d_loadImage("../res/images/HellBlade-/HellBlade-NoHand.png", &weaponManager.weapons[UNARMED].textures[0]);
+	d_loadImage("../res/images/HellBlade-/HellBlade-IDLE-ATT-1.png", &weaponManager.weapons[UNARMED].textures[1]);
+	d_loadImage("../res/images/HellBlade-/HellBlade-ATT2.png", &weaponManager.weapons[UNARMED].textures[2]);
+	d_loadImage("../res/images/HellBlade-/HellBlade-ATT3.png", &weaponManager.weapons[UNARMED].textures[3]);
+	d_loadImage("../res/images/HellBlade-/HellBlade-ATT4.png", &weaponManager.weapons[UNARMED].textures[4]);
+	weaponManager.weapons[UNARMED].rect = (SDL_Rect){
+		.x = state.scrW/3, .y = state.scrH/2,
+		.w = state.scrW/3, .h = state.scrH/2
+	};
+	weaponManager.weapons[UNARMED].timePerFrame = 200.0;
+
 	weaponManager.weapons[SHOTGUN] = (struct weapon){
 		.textures = malloc(sizeof(struct image) * 7),
 		.textureCount = 7,
@@ -50,10 +70,30 @@ void d_init(const char* file) {
 	d_loadImage("../res/images/shotgun/Shotgun-ATT4.png", &weaponManager.weapons[SHOTGUN].textures[4]);
 	d_loadImage("../res/images/shotgun/Shotgun-ATT5.png", &weaponManager.weapons[SHOTGUN].textures[5]);
 	d_loadImage("../res/images/shotgun/Shotgun-ATT6.png", &weaponManager.weapons[SHOTGUN].textures[6]);
-	weaponManager.weapons[SHOTGUN].textures[0].rect = (SDL_Rect){
+	weaponManager.weapons[SHOTGUN].rect = (SDL_Rect){
 		.x = 2*state.scrW/5, .y = 2*state.scrH/3,
 		.w = state.scrW/5, .h = state.scrH/3
 	};
+	weaponManager.weapons[SHOTGUN].timePerFrame = 80.0;
+
+	weaponManager.weapons[AR] = (struct weapon){
+		.textures = malloc(sizeof(struct image) * 5),
+		.textureCount = 5,
+		.magSize = 2,
+		.bullets = 2,
+		.firing = false,
+		.frame = 0
+	};
+	d_loadImage("../res/images/AR/AR-IDLE.png", &weaponManager.weapons[AR].textures[0]);
+	d_loadImage("../res/images/AR/AR-ATT1.png", &weaponManager.weapons[AR].textures[1]);
+	d_loadImage("../res/images/AR/AR-ATT2.png", &weaponManager.weapons[AR].textures[2]);
+	d_loadImage("../res/images/AR/AR-ATT3.png", &weaponManager.weapons[AR].textures[3]);
+	d_loadImage("../res/images/AR/AR-ATT4.png", &weaponManager.weapons[AR].textures[4]);
+	weaponManager.weapons[AR].rect = (SDL_Rect){
+		.x = 2*state.scrW/5, .y = 2*state.scrH/3,
+		.w = state.scrW/5, .h = state.scrH/3
+	};
+	weaponManager.weapons[AR].timePerFrame = 70.0;
 
 	currentLevel.textures = malloc(sizeof(uint32_t*) * 5);
 	currentLevel.textureCount = 5;
@@ -62,6 +102,10 @@ void d_init(const char* file) {
 	d_loadImageSurface("../res/images/Metal_08.png", &currentLevel.textures[2]);
 	d_loadImageSurface("../res/images/Plaster_14.png", &currentLevel.textures[3]);
 	d_loadImageSurface("../res/images/Stone_13.png", &currentLevel.textures[4]);
+
+	currentLevel.sprites = malloc(sizeof(uint32_t*) * 1);
+	currentLevel.spriteCount = 1;
+	d_loadImageSurface("../res/images/robot/tile000.png", &currentLevel.sprites[0]);
 }
 
 void d_terminate() {
@@ -71,6 +115,9 @@ void d_terminate() {
 			free(&weaponManager.weapons[i].textures[j]);
 		}
 		free(&weaponManager.weapons[i]);
+	}
+	for (int i = 0; i < currentLevel.spriteCount; i++) {
+		free(&currentLevel.sprites[i]);
 	}
 	for (int i = 0; i < currentLevel.textureCount; i++) {
 		free(&currentLevel.textures[i]);

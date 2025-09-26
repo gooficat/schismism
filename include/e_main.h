@@ -14,19 +14,22 @@ struct entity {
 	float rot;
 	float speed;
 	float accel, decel;
-	float rot_speed;
+	float rotSpeed;
 	float height;
-	uint8_t sprite_id;
+	uint8_t spriteId;
 };
 
 struct weapon {
 	struct image *textures;
 	uint8_t textureCount;
+	SDL_Rect rect;
 	uint8_t magSize;
 	uint8_t ammoID;
 	uint8_t bullets;
 	bool firing;
 	uint8_t frame;
+	double timePerFrame;
+    double frameTime;
 };
 
 void e_move_and_slide(struct entity* e);
