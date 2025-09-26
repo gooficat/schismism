@@ -95,7 +95,7 @@ void d_init(const char* file) {
 	};
 	weaponManager.weapons[AR].timePerFrame = 70.0;
 
-	currentLevel.textures = malloc(sizeof(uint32_t*) * 5);
+	currentLevel.textures = malloc(sizeof(uint32_t) * 5);
 	currentLevel.textureCount = 5;
 	d_loadImageSurface("../res/images/Brick_12.png", &currentLevel.textures[0]);
 	d_loadImageSurface("../res/images/Brick_19.png", &currentLevel.textures[1]);
@@ -103,9 +103,23 @@ void d_init(const char* file) {
 	d_loadImageSurface("../res/images/Plaster_14.png", &currentLevel.textures[3]);
 	d_loadImageSurface("../res/images/Stone_13.png", &currentLevel.textures[4]);
 
-	currentLevel.sprites = malloc(sizeof(uint32_t*) * 1);
+	currentLevel.sprites = malloc(sizeof(uint32_t) * 1);
 	currentLevel.spriteCount = 1;
 	d_loadImageSurface("../res/images/robot/tile000.png", &currentLevel.sprites[0]);
+
+	currentLevel.entities = malloc(sizeof(struct entity) * 1);
+	currentLevel.entityCount = 1;
+	currentLevel.entities[0] = (struct entity) {
+		.pos = {8.5f, 8.5f},
+		.vel = {0, 0},
+		.rot = 0,
+		.speed = 5.0f,
+		.accel = 0.5f,
+		.decel = 0.3f,
+		.rotSpeed = 1.0f,
+		.height = 0.8f,
+		.spriteId = 0
+	};
 }
 
 void d_terminate() {
@@ -122,6 +136,7 @@ void d_terminate() {
 	for (int i = 0; i < currentLevel.textureCount; i++) {
 		free(&currentLevel.textures[i]);
 	}
+	free(currentLevel.entities);
 	IMG_Quit();
 }
 

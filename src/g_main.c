@@ -6,7 +6,6 @@ struct game_state state;
 struct weapon_manager weaponManager;
 struct entity player;
 
-struct entity enemy;
 
 void g_terminate() {
     state.running = false;
@@ -89,13 +88,7 @@ int main() {
     d_init("../res/lvl0.txt");
     
     static SDL_Event event;
-
-
-
-    enemy.pos.x = 6.5f;
-    enemy.pos.y = 6.5f;
-    enemy.spriteId = 0;
-
+    
     state.running = true;
 
     static double lastFrameTime;

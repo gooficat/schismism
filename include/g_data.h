@@ -28,6 +28,7 @@ struct level {
 	uint8_t textureCount;
 	uint8_t floorTexture;
 	struct entity* entities;
+	uint8_t entityCount;
 	uint32_t** sprites;
 	uint8_t spriteCount;
 };

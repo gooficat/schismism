@@ -35,8 +35,6 @@ extern struct weapon_manager {
     uint8_t weaponCount;
 } weaponManager;
 
-extern struct entity enemy;
-
 extern struct entity player;
 
 void g_terminate();

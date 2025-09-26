@@ -123,48 +123,48 @@ void r_render() {
         }
     }
     
-    vec2_s spritePos = {
-        enemy.pos.x - player.pos.x,
-        enemy.pos.y - player.pos.y
-    };
-    
-    float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
+    for (int e = 0; e < currentLevel.entityCount; e++) {
+        vec2_s spritePos = {
+            currentLevel.entities[e].pos.x - player.pos.x,
+            currentLevel.entities[e].pos.y - player.pos.y
+        };
+        
+        float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
 
-    vec2_s spriteTransform = {
-        invDet * (dir.y * spritePos.x - dir.x * spritePos.y),
-        invDet * (-plane.y * spritePos.x + plane.x * spritePos.y)
-    };
+        vec2_s spriteTransform = {
+            invDet * (dir.y * spritePos.x - dir.x * spritePos.y),
+            invDet * (-plane.y * spritePos.x + plane.x * spritePos.y)
+        };
 
-    int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
+        int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
 
-    int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y)));
+        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * currentLevel.entities[e].height;
 
-    vec2i_s spriteDrawStart = {
-        clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-        clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
-    };
-    vec2i_s spriteDrawEnd = {
-        clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-        clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
-    };
+        vec2i_s spriteDrawStart = {
+            clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+            clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+        };
+        vec2i_s spriteDrawEnd = {
+            clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+            clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+        };
 
-    for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
-        vec2i_s texPos;
-        texPos.x = (int)(256 * (x - (-spriteScreenSize / 2 + spriteScreenPosX)) * spriteTextureRes / spriteScreenSize) / 256;
-     
-        if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
-            for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
-                int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
-                texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
-                uint32_t color = currentLevel.sprites[enemy.spriteId][texPos.y * spriteTextureRes + texPos.x];
-                if (color) {
-                    r_setPixel(x, y, color);
+        for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
+            vec2i_s texPos;
+            texPos.x = (int)(256 * (x - (-spriteScreenSize / 2 + spriteScreenPosX)) * spriteTextureRes / spriteScreenSize) / 256;
+        
+            if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
+                for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
+                    int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
+                    texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
+                    uint32_t color = currentLevel.sprites[currentLevel.entities[e].spriteId][texPos.y * spriteTextureRes + texPos.x];
+                    if (color) {
+                        r_setPixel(x, y, color);
+                    }
                 }
             }
         }
     }
-    //r_setPixel(x, y, currentLevel.sprites[enemy.spriteId][y * spriteTextureRes + x]);
-
     
 
     SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
