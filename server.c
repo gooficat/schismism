@@ -36,31 +36,39 @@ int main() {
 
 		while(enet_host_service(host, &event, 0) > 0) {
 			switch (event.type) {
-				case ENET_EVENT_TYPE_CONNECT:
-					netEntities = realloc(netEntities, sizeof(struct netEntity) * ++clientCount);
-					netEntities[clientCount-1] = (struct netEntity) {
-						.id = event.peer->connectID
-					};
-					break;
-				case ENET_EVENT_TYPE_DISCONNECT:
-					for (int i = 0; i < clientCount; i++) {
-						if (netEntities[i].id == event.peer->connectID) {
-							netEntities[i] = netEntities[clientCount];
-							break;
-						}
-						netEntities = realloc(netEntities, sizeof(struct netEntity) * --clientCount);
+			case ENET_EVENT_TYPE_CONNECT:
+				netEntities = realloc(netEntities, sizeof(struct netEntity) * ++clientCount);
+				netEntities[clientCount-1].id = event.peer->connectID;
+				printf("%d", clientCount);
+				break;
+			case ENET_EVENT_TYPE_DISCONNECT:
+				for (int i = 0; i < clientCount; i++) {
+					if (netEntities[i].id == event.peer->connectID) {
+						netEntities[i] = netEntities[--clientCount];
 					}
-					break;
-				case ENET_EVENT_TYPE_RECEIVE:
-					netEntities = realloc(netEntities, sizeof(struct netEntity) * --clientCount);
-					enet_packet_destroy(event.packet);
-					break;
+				}
+				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
+				break;
+			case ENET_EVENT_TYPE_RECEIVE:
+				struct netEntity data = *(struct netEntity*)&event.packet->data[0];
+				for (int i = 0; i < clientCount; i++) {
+					if (netEntities[i].id == event.peer->connectID) {
+						netEntities[i] = *(struct netEntity*)&event.packet->data[0];
+					}
+				}
+				event.packet->data = NULL;
+				enet_packet_destroy(event.packet);
+				break;
+			default:
+				break;
 			}
 		}
 
 		for (int i = 0; i < clientCount; i++) {
-			
-			ENetPacket* packet = enet_packet_create(&netEntities[i], sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
+			int8_t *data;
+			data = malloc(sizeof(struct netEntity));
+			data = &(*(int8_t*)&netEntities[i]);
+			ENetPacket* packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
 			enet_host_broadcast(host, 0, packet);
 		}
 

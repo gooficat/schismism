@@ -126,5 +126,6 @@ int main() {
             state.deltaTime = state.targetFrameTime;
         }
     }
+    n_destroy();
     return 0;
 }

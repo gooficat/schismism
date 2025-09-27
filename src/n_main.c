@@ -8,7 +8,7 @@ static struct {
 } netState;
 
 struct netEntity {
-	uint8_t id;
+	uint32_t id;
 	vec2_s pos;
 	float rot;
 } *netEntities;
@@ -37,19 +37,35 @@ void n_update() {
 	while (enet_host_service(netState.host, &netState.event, 0) > 0) {
 		switch (netState.event.type) {
 			case ENET_EVENT_TYPE_CONNECT:
-				clientCount++;
+				netEntities = realloc(netEntities, sizeof(struct netEntity) * ++clientCount);
+				netEntities[clientCount-1].id = netState.event.peer->connectID;
 				printf("%d", clientCount);
 				break;
 			case ENET_EVENT_TYPE_DISCONNECT:
-				clientCount--;
+				for (int i = 0; i < clientCount; i++) {
+					if (netEntities[i].id == netState.event.peer->connectID) {
+						netEntities[i] = netEntities[--clientCount];
+					}
+				}
+				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
 				break;
 			case ENET_EVENT_TYPE_RECEIVE:
+				for (int i = 0; i < clientCount; i++) {
+					if (netEntities[i].id == netState.event.peer->connectID) {
+						netEntities[i] = *(struct netEntity*)&netState.event.packet->data[0];
+					}
+				}
+				netState.event.packet->data = NULL;
 				enet_packet_destroy(netState.event.packet);
 				break;
 			default:
 				break;
 		}
 	}
+	printf("%u", clientCount);
+	// for (int i = 0; i < clientCount; i++) {
+	// 	printf("%u", netEntities[i].id);
+	// }
 }
 
 void n_destroy() {

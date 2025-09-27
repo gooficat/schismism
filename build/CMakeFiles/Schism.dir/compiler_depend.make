@@ -1123,13 +1123,68 @@ CMakeFiles/Schism.dir/src/g_main.c.obj: C:/Users/User/Documents/Schism/src/g_mai
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h
 
 CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_main.c \
+  C:/Users/User/Documents/Schism/include/e_main.h \
+  C:/Users/User/Documents/Schism/include/g_data.h \
   C:/Users/User/Documents/Schism/include/g_defs.h \
+  C:/Users/User/Documents/Schism/include/g_main.h \
   C:/Users/User/Documents/Schism/include/n_main.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_cpuinfo.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_endian.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_error.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_events.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_filesystem.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gamecontroller.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gesture.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_guid.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_haptic.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hidapi.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hints.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_image.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_joystick.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keyboard.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keycode.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_loadso.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_log.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_misc.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mouse.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mutex.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_pixels.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_power.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rect.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_render.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rwops.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_scancode.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_sensor.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_shape.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_stdinc.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_system.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_thread.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_timer.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_touch.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_version.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
@@ -1147,6 +1202,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
   C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wctype.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
@@ -1170,6 +1226,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
   C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/float.h \
   C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
   C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
   C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
@@ -1177,6 +1234,8 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
   C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
   C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
   C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
@@ -1185,6 +1244,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
   C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
   C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/math.h \
   C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
   C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
@@ -1209,6 +1269,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
   C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/process.h \
   C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
   C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
@@ -1245,9 +1306,11 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
   C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
   C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
@@ -1258,8 +1321,10 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
   C:/Users/User/Documents/msys64/ucrt64/include/string.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
   C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
@@ -1273,6 +1338,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
   C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
+  C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
   C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
   C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
   C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
@@ -1365,9 +1431,11 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clwbintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clzerointrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cmpccxaddintrin.h \
+  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/enqcmdintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h \
+  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fmaintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h \
@@ -1403,6 +1471,7 @@ CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_mai
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm4intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
+  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \

@@ -6,8 +6,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "g_data.h"
 #include "g_defs.h"
 
 void n_init_client(const char* host, uint16_t port);
 
 void n_update();
+
+void n_destroy();
