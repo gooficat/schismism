@@ -76,66 +76,82 @@ CMakeFiles/Schism.dir/src/e_main.c.obj: CMakeFiles/Schism.dir/includes_C.rsp
 CMakeFiles/Schism.dir/src/e_main.c.obj: C:/Users/User/Documents/Schism/src/e_main.c
 CMakeFiles/Schism.dir/src/e_main.c.obj: CMakeFiles/Schism.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Schism.dir/src/e_main.c.obj"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/e_main.c.obj -MF CMakeFiles\Schism.dir\src\e_main.c.obj.d -o CMakeFiles\Schism.dir\src\e_main.c.obj -c C:\Users\User\Documents\Schism\src\e_main.c
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/e_main.c.obj -MF CMakeFiles\Schism.dir\src\e_main.c.obj.d -o CMakeFiles\Schism.dir\src\e_main.c.obj -c C:\Users\User\Documents\Schism\src\e_main.c
 
 CMakeFiles/Schism.dir/src/e_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Schism.dir/src/e_main.c.i"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\e_main.c > CMakeFiles\Schism.dir\src\e_main.c.i
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\e_main.c > CMakeFiles\Schism.dir\src\e_main.c.i
 
 CMakeFiles/Schism.dir/src/e_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Schism.dir/src/e_main.c.s"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\e_main.c -o CMakeFiles\Schism.dir\src\e_main.c.s
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\e_main.c -o CMakeFiles\Schism.dir\src\e_main.c.s
 
 CMakeFiles/Schism.dir/src/g_data.c.obj: CMakeFiles/Schism.dir/flags.make
 CMakeFiles/Schism.dir/src/g_data.c.obj: CMakeFiles/Schism.dir/includes_C.rsp
 CMakeFiles/Schism.dir/src/g_data.c.obj: C:/Users/User/Documents/Schism/src/g_data.c
 CMakeFiles/Schism.dir/src/g_data.c.obj: CMakeFiles/Schism.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Schism.dir/src/g_data.c.obj"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/g_data.c.obj -MF CMakeFiles\Schism.dir\src\g_data.c.obj.d -o CMakeFiles\Schism.dir\src\g_data.c.obj -c C:\Users\User\Documents\Schism\src\g_data.c
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/g_data.c.obj -MF CMakeFiles\Schism.dir\src\g_data.c.obj.d -o CMakeFiles\Schism.dir\src\g_data.c.obj -c C:\Users\User\Documents\Schism\src\g_data.c
 
 CMakeFiles/Schism.dir/src/g_data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Schism.dir/src/g_data.c.i"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\g_data.c > CMakeFiles\Schism.dir\src\g_data.c.i
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\g_data.c > CMakeFiles\Schism.dir\src\g_data.c.i
 
 CMakeFiles/Schism.dir/src/g_data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Schism.dir/src/g_data.c.s"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\g_data.c -o CMakeFiles\Schism.dir\src\g_data.c.s
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\g_data.c -o CMakeFiles\Schism.dir\src\g_data.c.s
 
 CMakeFiles/Schism.dir/src/g_main.c.obj: CMakeFiles/Schism.dir/flags.make
 CMakeFiles/Schism.dir/src/g_main.c.obj: CMakeFiles/Schism.dir/includes_C.rsp
 CMakeFiles/Schism.dir/src/g_main.c.obj: C:/Users/User/Documents/Schism/src/g_main.c
 CMakeFiles/Schism.dir/src/g_main.c.obj: CMakeFiles/Schism.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Schism.dir/src/g_main.c.obj"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/g_main.c.obj -MF CMakeFiles\Schism.dir\src\g_main.c.obj.d -o CMakeFiles\Schism.dir\src\g_main.c.obj -c C:\Users\User\Documents\Schism\src\g_main.c
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/g_main.c.obj -MF CMakeFiles\Schism.dir\src\g_main.c.obj.d -o CMakeFiles\Schism.dir\src\g_main.c.obj -c C:\Users\User\Documents\Schism\src\g_main.c
 
 CMakeFiles/Schism.dir/src/g_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Schism.dir/src/g_main.c.i"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\g_main.c > CMakeFiles\Schism.dir\src\g_main.c.i
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\g_main.c > CMakeFiles\Schism.dir\src\g_main.c.i
 
 CMakeFiles/Schism.dir/src/g_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Schism.dir/src/g_main.c.s"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\g_main.c -o CMakeFiles\Schism.dir\src\g_main.c.s
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\g_main.c -o CMakeFiles\Schism.dir\src\g_main.c.s
+
+CMakeFiles/Schism.dir/src/n_main.c.obj: CMakeFiles/Schism.dir/flags.make
+CMakeFiles/Schism.dir/src/n_main.c.obj: CMakeFiles/Schism.dir/includes_C.rsp
+CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_main.c
+CMakeFiles/Schism.dir/src/n_main.c.obj: CMakeFiles/Schism.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Schism.dir/src/n_main.c.obj"
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/n_main.c.obj -MF CMakeFiles\Schism.dir\src\n_main.c.obj.d -o CMakeFiles\Schism.dir\src\n_main.c.obj -c C:\Users\User\Documents\Schism\src\n_main.c
+
+CMakeFiles/Schism.dir/src/n_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Schism.dir/src/n_main.c.i"
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\n_main.c > CMakeFiles\Schism.dir\src\n_main.c.i
+
+CMakeFiles/Schism.dir/src/n_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Schism.dir/src/n_main.c.s"
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\n_main.c -o CMakeFiles\Schism.dir\src\n_main.c.s
 
 CMakeFiles/Schism.dir/src/r_main.c.obj: CMakeFiles/Schism.dir/flags.make
 CMakeFiles/Schism.dir/src/r_main.c.obj: CMakeFiles/Schism.dir/includes_C.rsp
 CMakeFiles/Schism.dir/src/r_main.c.obj: C:/Users/User/Documents/Schism/src/r_main.c
 CMakeFiles/Schism.dir/src/r_main.c.obj: CMakeFiles/Schism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Schism.dir/src/r_main.c.obj"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/r_main.c.obj -MF CMakeFiles\Schism.dir\src\r_main.c.obj.d -o CMakeFiles\Schism.dir\src\r_main.c.obj -c C:\Users\User\Documents\Schism\src\r_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Schism.dir/src/r_main.c.obj"
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Schism.dir/src/r_main.c.obj -MF CMakeFiles\Schism.dir\src\r_main.c.obj.d -o CMakeFiles\Schism.dir\src\r_main.c.obj -c C:\Users\User\Documents\Schism\src\r_main.c
 
 CMakeFiles/Schism.dir/src/r_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Schism.dir/src/r_main.c.i"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\r_main.c > CMakeFiles\Schism.dir\src\r_main.c.i
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User\Documents\Schism\src\r_main.c > CMakeFiles\Schism.dir\src\r_main.c.i
 
 CMakeFiles/Schism.dir/src/r_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Schism.dir/src/r_main.c.s"
-	c:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\r_main.c -o CMakeFiles\Schism.dir\src\r_main.c.s
+	C:\Users\User\Documents\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User\Documents\Schism\src\r_main.c -o CMakeFiles\Schism.dir\src\r_main.c.s
 
 # Object files for target Schism
 Schism_OBJECTS = \
 "CMakeFiles/Schism.dir/src/e_main.c.obj" \
 "CMakeFiles/Schism.dir/src/g_data.c.obj" \
 "CMakeFiles/Schism.dir/src/g_main.c.obj" \
+"CMakeFiles/Schism.dir/src/n_main.c.obj" \
 "CMakeFiles/Schism.dir/src/r_main.c.obj"
 
 # External object files for target Schism
@@ -144,12 +160,13 @@ Schism_EXTERNAL_OBJECTS =
 Schism.exe: CMakeFiles/Schism.dir/src/e_main.c.obj
 Schism.exe: CMakeFiles/Schism.dir/src/g_data.c.obj
 Schism.exe: CMakeFiles/Schism.dir/src/g_main.c.obj
+Schism.exe: CMakeFiles/Schism.dir/src/n_main.c.obj
 Schism.exe: CMakeFiles/Schism.dir/src/r_main.c.obj
 Schism.exe: CMakeFiles/Schism.dir/build.make
 Schism.exe: CMakeFiles/Schism.dir/linkLibs.rsp
 Schism.exe: CMakeFiles/Schism.dir/objects1.rsp
 Schism.exe: CMakeFiles/Schism.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Schism.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Schism.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Schism.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

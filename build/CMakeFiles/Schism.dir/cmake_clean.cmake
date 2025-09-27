@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Schism.dir/src/g_data.c.obj.d"
   "CMakeFiles/Schism.dir/src/g_main.c.obj"
   "CMakeFiles/Schism.dir/src/g_main.c.obj.d"
+  "CMakeFiles/Schism.dir/src/n_main.c.obj"
+  "CMakeFiles/Schism.dir/src/n_main.c.obj.d"
   "CMakeFiles/Schism.dir/src/r_main.c.obj"
   "CMakeFiles/Schism.dir/src/r_main.c.obj.d"
   "Schism.exe"

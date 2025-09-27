@@ -4,16 +4,19 @@
 #include <SDL2/SDL.h>
 #include <stdbool.h>
 
-
 #include "g_data.h"
 #include "g_defs.h"
 
 #include "e_main.h"
+#include "n_main.h"
 
 #define SCR_W 960
 #define SCR_H 480
 
 #define TARGET_FPS 30
+
+#define MULTIPLAYER_HOST "localhost"
+#define MULTIPLAYER_PORT 4167
 
 extern struct game_state {
     SDL_Window* window;

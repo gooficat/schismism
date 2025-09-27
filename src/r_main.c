@@ -160,6 +160,7 @@ void r_render() {
                     uint32_t color = currentLevel.sprites[currentLevel.entities[e].spriteId][texPos.y * spriteTextureRes + texPos.x];
                     if (color) {
                         r_setPixel(x, y, color);
+                        zBuffer[x] = spriteTransform.y;
                     }
                 }
             }

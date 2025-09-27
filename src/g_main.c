@@ -85,8 +85,12 @@ int main() {
     if (!state.renderer) printf("renderer failed to init\n");
 
     r_init();
-    d_init("../res/lvl0.txt");
+
+    n_init_client(MULTIPLAYER_HOST, MULTIPLAYER_PORT);
     
+    d_init("../res/lvl0.txt");
+
+
     static SDL_Event event;
     
     state.running = true;
@@ -109,6 +113,9 @@ int main() {
                     break;
             }
         }
+
+        n_update();
+        
         g_update();
 
         r_render();

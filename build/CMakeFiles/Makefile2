@@ -84,12 +84,12 @@ clean: CMakeFiles/Schism.dir/clean
 CMakeFiles/Schism.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target Schism"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Schism"
 .PHONY : CMakeFiles/Schism.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Schism.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Documents\Schism\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Documents\Schism\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Schism.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Documents\Schism\build\CMakeFiles 0
 .PHONY : CMakeFiles/Schism.dir/rule
@@ -101,7 +101,7 @@ Schism: CMakeFiles/Schism.dir/rule
 # codegen rule for target.
 CMakeFiles/Schism.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Schism"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\User\Documents\Schism\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target Schism"
 .PHONY : CMakeFiles/Schism.dir/codegen
 
 # clean rule for target.
