@@ -16,7 +16,6 @@ typedef uint8_t connectPacket;
 struct netEntity {
 	uint32_t id;
 	vec2_s pos;
-	float rot;
 } *netEntities;
 static uint8_t clientCount;
 

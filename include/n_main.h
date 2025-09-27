@@ -14,3 +14,9 @@ void n_init_client(const char* host, uint16_t port);
 void n_update();
 
 void n_destroy();
+
+extern struct netEntity {
+	uint32_t id;
+	vec2_s pos;
+} *netEntities;
+extern uint8_t clientCount;

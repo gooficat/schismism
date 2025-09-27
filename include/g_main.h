@@ -18,6 +18,8 @@
 #define MULTIPLAYER_HOST "localhost"
 #define MULTIPLAYER_PORT 4167
 
+#define NETWORKED_ENEMY_SPRITE 0
+
 extern struct game_state {
     SDL_Window* window;
     SDL_Renderer* renderer;

@@ -10,9 +10,8 @@ static struct {
 struct netEntity {
 	uint32_t id;
 	vec2_s pos;
-	float rot;
 } *netEntities;
-static uint8_t clientCount;
+uint8_t clientCount;
 
 void n_init_client(const char* host, uint16_t port) {
     enet_initialize();
@@ -44,7 +43,7 @@ void n_update() {
 			case ENET_EVENT_TYPE_DISCONNECT:
 				for (int i = 0; i < clientCount; i++) {
 					if (netEntities[i].id == netState.event.peer->connectID) {
-						netEntities[i] = netEntities[--clientCount];
+						netEntities[i] = netEntities[--clientCount - 1];
 					}
 				}
 				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
@@ -63,9 +62,9 @@ void n_update() {
 		}
 	}
 	printf("%u", clientCount);
-	// for (int i = 0; i < clientCount; i++) {
-	// 	printf("%u", netEntities[i].id);
-	// }
+	for (int i = 0; i < clientCount; i++) {
+		printf("%u", netEntities[i].id);
+	}
 }
 
 void n_destroy() {

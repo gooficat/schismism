@@ -17,6 +17,7 @@ struct entity {
 	float rotSpeed;
 	float height;
 	uint8_t spriteId;
+	uint32_t netId;
 };
 
 struct weapon {
