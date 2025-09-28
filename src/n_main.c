@@ -13,7 +13,12 @@ struct netEntity {
 } *netEntities;
 uint8_t clientCount;
 
+ENetPacket* packet;
+int8_t *data;
+	
+
 void n_init_client(const char* host, uint16_t port) {
+	data = malloc(sizeof(struct netEntity));
     enet_initialize();
 	puts("enet initted");
 
@@ -43,15 +48,17 @@ void n_update() {
 			case ENET_EVENT_TYPE_DISCONNECT:
 				for (int i = 0; i < clientCount; i++) {
 					if (netEntities[i].id == netState.event.peer->connectID) {
-						netEntities[i] = netEntities[--clientCount - 1];
+						netEntities[i] = netEntities[clientCount - 1];
 					}
 				}
+				clientCount--;
 				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
 				break;
 			case ENET_EVENT_TYPE_RECEIVE:
 				for (int i = 0; i < clientCount; i++) {
 					if (netEntities[i].id == netState.event.peer->connectID) {
 						netEntities[i] = *(struct netEntity*)&netState.event.packet->data[0];
+						break;
 					}
 				}
 				netState.event.packet->data = NULL;
@@ -61,10 +68,13 @@ void n_update() {
 				break;
 		}
 	}
-	printf("%u", clientCount);
-	for (int i = 0; i < clientCount; i++) {
-		printf("%u", netEntities[i].id);
-	}
+	struct netEntity self = {
+		.pos = player.pos,
+		.id = netState.peer->connectID
+	};
+	data = &(*(int8_t*)&self);
+	packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
+	enet_host_broadcast(netState.host, 0, packet);
 }
 
 void n_destroy() {

@@ -13,12 +13,13 @@
 #define SCR_W 960
 #define SCR_H 480
 
-#define TARGET_FPS 30
+#define TARGET_FPS 20
 
 #define MULTIPLAYER_HOST "localhost"
 #define MULTIPLAYER_PORT 4167
 
 #define NETWORKED_ENEMY_SPRITE 0
+#define NETWORKED_ENEMY_HEIGHT 1
 
 extern struct game_state {
     SDL_Window* window;

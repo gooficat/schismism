@@ -182,7 +182,7 @@ void r_render() {
 
         int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
 
-        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * currentLevel.entities[e].height;
+        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * NETWORKED_ENEMY_HEIGHT;
 
         vec2i_s spriteDrawStart = {
             clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),

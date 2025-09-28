@@ -4,7 +4,7 @@
 #include <SDL2/SDL.h>
 
 #define PORT 4167
-#define TICK_RATE 60
+#define TICK_RATE 20
 
 
 typedef struct {
@@ -19,7 +19,9 @@ struct netEntity {
 } *netEntities;
 static uint8_t clientCount;
 
-int main() {
+int main() {			
+	int8_t *data = malloc(sizeof(struct netEntity));
+	ENetPacket* packet;
 	enet_initialize();
 	ENetAddress address;
 	address.host = ENET_HOST_ANY;
@@ -38,7 +40,7 @@ int main() {
 			case ENET_EVENT_TYPE_CONNECT:
 				netEntities = realloc(netEntities, sizeof(struct netEntity) * ++clientCount);
 				netEntities[clientCount-1].id = event.peer->connectID;
-				printf("%d", clientCount);
+				printf("%d connected", clientCount);
 				break;
 			case ENET_EVENT_TYPE_DISCONNECT:
 				for (int i = 0; i < clientCount; i++) {
@@ -46,6 +48,7 @@ int main() {
 						netEntities[i] = netEntities[--clientCount];
 					}
 				}
+				printf("%d disconnected", clientCount);
 				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
 				break;
 			case ENET_EVENT_TYPE_RECEIVE:
@@ -54,7 +57,7 @@ int main() {
 					if (netEntities[i].id == event.peer->connectID) {
 						netEntities[i] = *(struct netEntity*)&event.packet->data[0];
 					}
-				}
+				}	
 				event.packet->data = NULL;
 				enet_packet_destroy(event.packet);
 				break;
@@ -64,10 +67,8 @@ int main() {
 		}
 
 		for (int i = 0; i < clientCount; i++) {
-			int8_t *data;
-			data = malloc(sizeof(struct netEntity));
 			data = &(*(int8_t*)&netEntities[i]);
-			ENetPacket* packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
+			packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
 			enet_host_broadcast(host, 0, packet);
 		}
 
