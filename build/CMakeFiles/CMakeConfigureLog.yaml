@@ -1351,8 +1351,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8"
-      binary: "C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8"
+      source: "C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri"
+      binary: "C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1361,13 +1361,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8'
+        Change Dir: 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri'
         
-        Run Build Command(s): C:/Users/User/Documents/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_fc072/fast
-        C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fc072.dir\\build.make CMakeFiles/cmTC_fc072.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8'
-        Building C object CMakeFiles/cmTC_fc072.dir/CMakeCCompilerABI.c.obj
-        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): C:/Users/User/Documents/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_31869/fast
+        C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_31869.dir\\build.make CMakeFiles/cmTC_31869.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri'
+        Building C object CMakeFiles/cmTC_31869.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -1375,8 +1375,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\'
-         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_fc072.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\cczJR3L0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\'
+         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_31869.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccl0iHmH.s
         GNU C23 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1395,14 +1395,14 @@ events:
          C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: f68563dd6aebdc6b84233a210e98d3c3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\'
-         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\cczJR3L0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\'
+         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccl0iHmH.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_fc072.exe
-        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_fc072.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_31869.exe
+        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_31869.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -1413,16 +1413,16 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc072.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_fc072.'
-         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccqI0IUI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_fc072.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_fc072.dir/objects.a --no-whole-archive --out-implib libcmTC_fc072.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_31869.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_31869.'
+         C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccSw8Leu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_31869.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_31869.dir/objects.a --no-whole-archive --out-implib libcmTC_31869.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccqI0IUI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_fc072.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_fc072.dir/objects.a --no-whole-archive --out-implib libcmTC_fc072.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccSw8Leu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_31869.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_31869.dir/objects.a --no-whole-archive --out-implib libcmTC_31869.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc072.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_fc072.'
-        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_fc072.dir/objects.a
-        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_fc072.dir/objects.a @CMakeFiles\\cmTC_fc072.dir\\objects1.rsp
-        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_fc072.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc072.exe -Wl,--out-implib,libcmTC_fc072.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_31869.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_31869.'
+        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_31869.dir/objects.a
+        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_31869.dir/objects.a @CMakeFiles\\cmTC_31869.dir\\objects1.rsp
+        C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_31869.dir/objects.a -Wl,--no-whole-archive -o cmTC_31869.exe -Wl,--out-implib,libcmTC_31869.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri'
         
       exitCode: 0
   -
@@ -1455,13 +1455,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8']
+        ignore line: [Change Dir: 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/User/Documents/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_fc072/fast]
-        ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fc072.dir\\build.make CMakeFiles/cmTC_fc072.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-fy46y8']
-        ignore line: [Building C object CMakeFiles/cmTC_fc072.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/Users/User/Documents/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_31869/fast]
+        ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_31869.dir\\build.make CMakeFiles/cmTC_31869.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/User/Documents/Schism/build/CMakeFiles/CMakeScratch/TryCompile-7ycwri']
+        ignore line: [Building C object CMakeFiles/cmTC_31869.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -1469,8 +1469,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\']
-        ignore line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_fc072.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\cczJR3L0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\']
+        ignore line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Users\\User\\Documents\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_31869.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\User\\AppData\\Local\\Temp\\ccl0iHmH.s]
         ignore line: [GNU C23 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1489,8 +1489,8 @@ events:
         ignore line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f68563dd6aebdc6b84233a210e98d3c3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\']
-        ignore line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\cczJR3L0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\']
+        ignore line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj C:\\Users\\User\\AppData\\Local\\Temp\\ccl0iHmH.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/]
@@ -1501,9 +1501,9 @@ events:
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_fc072.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_fc072.exe]
-        ignore line: [C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_fc072.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_31869.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_31869.exe]
+        ignore line: [C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_31869.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -1521,13 +1521,13 @@ events:
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fc072.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_fc072.']
-        link line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccqI0IUI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_fc072.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_fc072.dir/objects.a --no-whole-archive --out-implib libcmTC_fc072.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_31869.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_31869.']
+        link line: [ C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccSw8Leu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_31869.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_31869.dir/objects.a --no-whole-archive --out-implib libcmTC_31869.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccqI0IUI.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccSw8Leu.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -1549,7 +1549,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_fc072.exe] ==> ignore
+          arg [cmTC_31869.exe] ==> ignore
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -1560,10 +1560,10 @@ events:
           arg [-LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_fc072.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_31869.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_fc072.dll.a] ==> ignore
+          arg [libcmTC_31869.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1588,7 +1588,7 @@ events:
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccqI0IUI.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_fc072.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_fc072.dir/objects.a --no-whole-archive --out-implib libcmTC_fc072.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\User\\AppData\\Local\\Temp\\ccSw8Leu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_31869.exe C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_31869.dir/objects.a --no-whole-archive --out-implib libcmTC_31869.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/Users/User/Documents/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': C:/Users/User/Documents/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -5877,830 +5877,4 @@ events:
         - "C:/Program Files (x86)"
         - "C:/Users/User/Documents/msys64/ucrt64"
         - "C:/Program Files (x86)/Schism"
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:9 (find_package)"
-    name: "SDL2_Net"
-    configs:
-      -
-        filename: "SDL2_NetConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "sdl2_net-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "SDL2_Net"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/SDL2_NetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/sdl2_net-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/SDL2_NetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/sdl2_net-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/SDL2_NetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found:
-      path: "C:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_net/sdl2_net-config.cmake"
-      mode: "config"
-      version: "2.2.0"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\usr\\bin"
-        - "C:/Program Files/Common Files/Oracle/Java/javapath"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/dotnet/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Users/User/pypy3.11-v7.3.20-win64"
-        - "C:\\Users\\User\\Documents\\tcc"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files (x86)/Schism"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:9 (find_package)"
-    name: "Enet"
-    configs:
-      -
-        filename: "EnetConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "enet-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "Enet"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/EnetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\usr\\bin"
-        - "C:/Program Files/Common Files/Oracle/Java/javapath"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/dotnet/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Users/User/pypy3.11-v7.3.20-win64"
-        - "C:\\Users\\User\\Documents\\tcc"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files (x86)/Schism"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:9 (find_package)"
-    name: "enet"
-    configs:
-      -
-        filename: "enetConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "enet-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "enet"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/enetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\usr\\bin"
-        - "C:/Program Files/Common Files/Oracle/Java/javapath"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/dotnet/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Users/User/pypy3.11-v7.3.20-win64"
-        - "C:\\Users\\User\\Documents\\tcc"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files (x86)/Schism"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:9 (find_package)"
-    name: "ENet"
-    configs:
-      -
-        filename: "ENetConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "enet-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "ENet"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/Schism/build/CMakeFiles/pkgRedirects/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/ucrt64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/msys64/usr/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Python313/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Python/Launcher/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Microsoft/WindowsApps/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/pypy3.11-v7.3.20-win64/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/User/Documents/tcc/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/ENetConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/enet-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\usr\\bin"
-        - "C:/Program Files/Common Files/Oracle/Java/javapath"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/dotnet/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Users/User/pypy3.11-v7.3.20-win64"
-        - "C:\\Users\\User\\Documents\\tcc"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files (x86)/Schism"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "CMakeLists.txt:9 (find_library)"
-    mode: "library"
-    variable: "ENet"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    candidate_directories:
-      - "C:/Users/User/Documents/msys64/ucrt64/bin/"
-      - "C:/Users/User/Documents/msys64/usr/bin/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Python313/Scripts/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-      - "C:/Users/User/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/User/pypy3.11-v7.3.20-win64/"
-      - "C:/Users/User/Documents/tcc/"
-      - "C:/Users/User/Documents/msys64/ucrt64/lib/"
-      - "C:/Users/User/Documents/msys64/ucrt64/"
-      - "C:/Program Files/lib/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/lib/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files (x86)/Schism/lib/"
-      - "C:/Program Files (x86)/Schism/"
-      - "C:/Program Files (x86)/Schism/bin/"
-      - "/bin/"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\User\\Documents\\msys64\\usr\\bin"
-        - "C:/Program Files/Common Files/Oracle/Java/javapath"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/dotnet/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:/Users/User/AppData/Local/Programs/Python/Python313/"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:/Users/User/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Users/User/pypy3.11-v7.3.20-win64"
-        - "C:\\Users\\User\\Documents\\tcc"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Users/User/Documents/msys64/ucrt64"
-        - "C:/Program Files (x86)/Schism"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Program Files (x86)/Schism/bin"
-        - "C:/Users/User/Documents/msys64/ucrt64/bin"
-        - "/bin"
 ...

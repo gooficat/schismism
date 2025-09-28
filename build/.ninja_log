@@ -1,5 +1,17 @@
 # ninja log v7
-219	6368	7805129719898353	CMakeFiles/SoftwareRenderingStarter.dir/src/e_main.c.obj	b8961e1365dff7e1
-293	6689	7805129720735424	CMakeFiles/SoftwareRenderingStarter.dir/src/g_main.c.obj	c51b65f6d4c5bf9f
-310	5966	7805132918411957	CMakeFiles/SoftwareRenderingStarter.dir/src/r_main.c.obj	c99f7f74ae23dfe7
-144	2691	7805137564230431	CMakeFiles/SoftwareRenderingStarter.dir/src/g_data.c.obj	50da211a33dbeec2
+118	1059	7807774821104224	CMakeFiles/Schism.dir/src/n_main.c.obj	909f5c07d3e09f50
+52	3326	7807774820423094	CMakeFiles/Schism.dir/src/e_main.c.obj	4e5fa87f743764d5
+81	3395	7807774820723101	CMakeFiles/Schism.dir/src/g_data.c.obj	307bbc4e308a0954
+92	4413	7807774820824413	CMakeFiles/Schism.dir/src/g_main.c.obj	e259f7b84a20142c
+76	3646	7807775250774287	CMakeFiles/Schism.dir/src/r_main.c.obj	e556d13f5e2f564e
+3649	4373	7807775286424111	Schism.exe	e08c31a598cfacd0
+37	3105	7807778976024049	build.ninja	443ad6f3dc1931c
+37	3105	7807778976024049	C:/Users/User/Documents/Schism/build/cmake_install.cmake	443ad6f3dc1931c
+190	891	7807778981336889	CMakeFiles/Schism.dir/src/n_main.c.obj	b308c423b707a5fb
+133	3012	7807778980772388	CMakeFiles/Schism.dir/src/e_main.c.obj	541706f417d1a00f
+143	3053	7807778980872940	CMakeFiles/Schism.dir/src/g_data.c.obj	2f30881f5a8f81ad
+180	4100	7807778981234217	CMakeFiles/Schism.dir/src/g_main.c.obj	a8af2bb6bc59761d
+910	4553	7807778988530253	CMakeFiles/Schism.dir/src/r_main.c.obj	539a52c454e454b9
+4554	5379	7807779024921938	Schism.exe	e08c31a598cfacd0
+49	2471	7807779825919342	CMakeFiles/Schism.dir/src/r_main.c.obj	539a52c454e454b9
+2474	3322	7807779850128133	Schism.exe	e08c31a598cfacd0

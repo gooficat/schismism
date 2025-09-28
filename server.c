@@ -17,35 +17,35 @@ struct netEntity {
 	uint32_t id;
 	vec2_s pos;
 } *netEntities;
-static uint8_t clientCount;
+uint8_t clientCount = 0;
 
 int main() {			
 	int8_t *data = malloc(sizeof(struct netEntity));
-	ENetPacket* packet;
 	enet_initialize();
 	ENetAddress address;
 	address.host = ENET_HOST_ANY;
 	address.port = PORT;
 	ENetHost* host = enet_host_create(&address, 8, 2, 0, 0);
 	printf("hosting server");
-
 	double frameTime, deltaTime, targetFrameTime = 1.0/TICK_RATE;
 	bool running = true;
 	ENetEvent event;
 	while (running) {
 		frameTime = SDL_GetTicks();
 
-		while(enet_host_service(host, &event, 0) > 0) {
+		while(enet_host_service(host, &event, TICK_RATE/1000.0) > 0) {
 			switch (event.type) {
 			case ENET_EVENT_TYPE_CONNECT:
-				netEntities = realloc(netEntities, sizeof(struct netEntity) * ++clientCount);
+				clientCount+=1;
+				netEntities = realloc(netEntities, sizeof(struct netEntity) * clientCount);
 				netEntities[clientCount-1].id = event.peer->connectID;
 				printf("%d connected", clientCount);
 				break;
 			case ENET_EVENT_TYPE_DISCONNECT:
 				for (int i = 0; i < clientCount; i++) {
 					if (netEntities[i].id == event.peer->connectID) {
-						netEntities[i] = netEntities[--clientCount];
+						clientCount -= 1;
+						netEntities[i] = netEntities[clientCount];
 					}
 				}
 				printf("%d disconnected", clientCount);
@@ -68,8 +68,10 @@ int main() {
 
 		for (int i = 0; i < clientCount; i++) {
 			data = &(*(int8_t*)&netEntities[i]);
-			packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
+			ENetPacket* packet = enet_packet_create(&data, sizeof(struct netEntity), ENET_PACKET_FLAG_UNRELIABLE_FRAGMENT);
 			enet_host_broadcast(host, 0, packet);
+			printf("netEntity x:%f y:%f", netEntities[i].pos.x, netEntities[i].pos.y);
+			//enet_packet_destroy(packet);
 		}
 
 		deltaTime = (SDL_GetTicks() - frameTime) / 1000.0;

@@ -200,30 +200,6 @@ src/g_main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/src/g_main.c.s
 .PHONY : src/g_main.c.s
 
-src/n_main.obj: src/n_main.c.obj
-.PHONY : src/n_main.obj
-
-# target to build an object file
-src/n_main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/src/n_main.c.obj
-.PHONY : src/n_main.c.obj
-
-src/n_main.i: src/n_main.c.i
-.PHONY : src/n_main.i
-
-# target to preprocess a source file
-src/n_main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/src/n_main.c.i
-.PHONY : src/n_main.c.i
-
-src/n_main.s: src/n_main.c.s
-.PHONY : src/n_main.s
-
-# target to generate assembly for a file
-src/n_main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Schism.dir\build.make CMakeFiles/Schism.dir/src/n_main.c.s
-.PHONY : src/n_main.c.s
-
 src/r_main.obj: src/r_main.c.obj
 .PHONY : src/r_main.obj
 
@@ -266,9 +242,6 @@ help:
 	@echo ... src/g_main.obj
 	@echo ... src/g_main.i
 	@echo ... src/g_main.s
-	@echo ... src/n_main.obj
-	@echo ... src/n_main.i
-	@echo ... src/n_main.s
 	@echo ... src/r_main.obj
 	@echo ... src/r_main.i
 	@echo ... src/r_main.s

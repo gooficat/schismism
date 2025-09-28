@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/User/Documents/Schism/src/e_main.c" "CMakeFiles/Schism.dir/src/e_main.c.obj" "gcc" "CMakeFiles/Schism.dir/src/e_main.c.obj.d"
   "C:/Users/User/Documents/Schism/src/g_data.c" "CMakeFiles/Schism.dir/src/g_data.c.obj" "gcc" "CMakeFiles/Schism.dir/src/g_data.c.obj.d"
   "C:/Users/User/Documents/Schism/src/g_main.c" "CMakeFiles/Schism.dir/src/g_main.c.obj" "gcc" "CMakeFiles/Schism.dir/src/g_main.c.obj.d"
-  "C:/Users/User/Documents/Schism/src/n_main.c" "CMakeFiles/Schism.dir/src/n_main.c.obj" "gcc" "CMakeFiles/Schism.dir/src/n_main.c.obj.d"
   "C:/Users/User/Documents/Schism/src/r_main.c" "CMakeFiles/Schism.dir/src/r_main.c.obj" "gcc" "CMakeFiles/Schism.dir/src/r_main.c.obj.d"
   )
 

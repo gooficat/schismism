@@ -18,11 +18,12 @@
 #define spriteTextureRes 32
 
 struct image {
-	SDL_Texture* texture;
+	SDL_Texture* texture; 
 };
 
+
 struct level {
-	uint8_t* data;
+	char* data;
 	uint8_t width, length;
 	uint32_t** textures; //using surface for raw pixel 
 	uint8_t textureCount;

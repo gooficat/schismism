@@ -22,7 +22,6 @@ struct entity {
 
 struct weapon {
 	struct image *textures;
-	uint8_t textureCount;
 	SDL_Rect rect;
 	uint8_t magSize;
 	uint8_t ammoID;

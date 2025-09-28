@@ -4,3 +4,5 @@
 
 #define min(x, y) (x < y) ? x : y
 #define max(x, y) (x > y) ? x : y
+
+#define lerp(c, t, f) c * (1.0 - f) + t * f

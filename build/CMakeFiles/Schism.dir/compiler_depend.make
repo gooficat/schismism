@@ -6,7 +6,6 @@ CMakeFiles/Schism.dir/src/e_main.c.obj: C:/Users/User/Documents/Schism/src/e_mai
   C:/Users/User/Documents/Schism/include/g_data.h \
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
-  C:/Users/User/Documents/Schism/include/n_main.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
@@ -58,28 +57,12 @@ CMakeFiles/Schism.dir/src/e_main.c.obj: C:/Users/User/Documents/Schism/src/e_mai
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cderr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cguid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -87,166 +70,32 @@ CMakeFiles/Schism.dir/src/e_main.c.obj: C:/Users/User/Documents/Schism/src/e_mai
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
   C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h \
   C:/Users/User/Documents/msys64/ucrt64/include/ctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dde.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/errno.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
   C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
   C:/Users/User/Documents/msys64/ucrt64/include/math.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/msxml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/nb30.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ole2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
   C:/Users/User/Documents/msys64/ucrt64/include/process.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/propidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/prsht.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h \
   C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/qos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/reason.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
   C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stddef.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdint.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdio.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
   C:/Users/User/Documents/msys64/ucrt64/include/string.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
-  C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/tvout.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windows.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnls.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winperf.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winreg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winscard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winspool.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winuser.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h \
@@ -379,7 +228,6 @@ CMakeFiles/Schism.dir/src/g_data.c.obj: C:/Users/User/Documents/Schism/src/g_dat
   C:/Users/User/Documents/Schism/include/g_data.h \
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
-  C:/Users/User/Documents/Schism/include/n_main.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
@@ -431,28 +279,12 @@ CMakeFiles/Schism.dir/src/g_data.c.obj: C:/Users/User/Documents/Schism/src/g_dat
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cderr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cguid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -460,166 +292,32 @@ CMakeFiles/Schism.dir/src/g_data.c.obj: C:/Users/User/Documents/Schism/src/g_dat
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
   C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h \
   C:/Users/User/Documents/msys64/ucrt64/include/ctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dde.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/errno.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
   C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
   C:/Users/User/Documents/msys64/ucrt64/include/math.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/msxml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/nb30.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ole2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
   C:/Users/User/Documents/msys64/ucrt64/include/process.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/propidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/prsht.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h \
   C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/qos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/reason.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
   C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stddef.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdint.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdio.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
   C:/Users/User/Documents/msys64/ucrt64/include/string.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
-  C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/tvout.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windows.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnls.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winperf.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winreg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winscard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winspool.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winuser.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h \
@@ -753,7 +451,6 @@ CMakeFiles/Schism.dir/src/g_main.c.obj: C:/Users/User/Documents/Schism/src/g_mai
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
   C:/Users/User/Documents/Schism/include/g_util.h \
-  C:/Users/User/Documents/Schism/include/n_main.h \
   C:/Users/User/Documents/Schism/include/r_main.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
@@ -806,28 +503,12 @@ CMakeFiles/Schism.dir/src/g_main.c.obj: C:/Users/User/Documents/Schism/src/g_mai
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cderr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cguid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -835,539 +516,32 @@ CMakeFiles/Schism.dir/src/g_main.c.obj: C:/Users/User/Documents/Schism/src/g_mai
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
   C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h \
   C:/Users/User/Documents/msys64/ucrt64/include/ctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dde.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/errno.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
   C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
   C:/Users/User/Documents/msys64/ucrt64/include/math.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/msxml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/nb30.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ole2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
   C:/Users/User/Documents/msys64/ucrt64/include/process.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/propidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/prsht.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h \
   C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/qos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/reason.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
   C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stddef.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdint.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdio.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
   C:/Users/User/Documents/msys64/ucrt64/include/string.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
-  C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/tvout.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windows.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnls.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winperf.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winreg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winscard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winspool.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winuser.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxbf16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp8intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxint8intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxmovrsintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtileintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtransposeintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512bf16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512convertintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512mediaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512satcvtintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2convertintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2copyintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2satcvtintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx2intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16vlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgvlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bwintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512dqintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2vlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmiintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmivlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlbwintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vldqintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnniintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnnivlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectvlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqvlintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxifmaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxneconvertintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint16intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint8intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmiintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cetintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cldemoteintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clflushoptintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clwbintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clzerointrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cmpccxaddintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/enqcmdintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fmaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/gfniintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/hresetintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/immintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/keylockerintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lwpintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm3dnow.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movrsintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pkuintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/popcntintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchiintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchwintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/serializeintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sgxintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/shaintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm3intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm4intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tbmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/usermsrintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vpclmulqdqintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/waitpkgintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wbnoinvdintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wmmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86gprintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xopintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveoptintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavesintrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h
-
-CMakeFiles/Schism.dir/src/n_main.c.obj: C:/Users/User/Documents/Schism/src/n_main.c \
-  C:/Users/User/Documents/Schism/include/e_main.h \
-  C:/Users/User/Documents/Schism/include/g_data.h \
-  C:/Users/User/Documents/Schism/include/g_defs.h \
-  C:/Users/User/Documents/Schism/include/g_main.h \
-  C:/Users/User/Documents/Schism/include/n_main.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_cpuinfo.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_endian.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_error.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_events.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_filesystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gamecontroller.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gesture.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_guid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_haptic.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hidapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hints.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_image.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_joystick.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keyboard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keycode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_loadso.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_log.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_misc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mouse.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mutex.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_pixels.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_power.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rect.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_render.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rwops.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_scancode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_sensor.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_shape.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_stdinc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_system.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_thread.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_timer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_touch.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_version.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cderr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cguid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dde.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errno.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/math.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/msxml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/nb30.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ole2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/process.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/propidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/prsht.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/qos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/reason.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stdint.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stdio.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/string.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
-  C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/tvout.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windows.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnls.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winperf.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winreg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winscard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winspool.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winuser.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h \
@@ -1501,7 +675,6 @@ CMakeFiles/Schism.dir/src/r_main.c.obj: C:/Users/User/Documents/Schism/src/r_mai
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
   C:/Users/User/Documents/Schism/include/g_util.h \
-  C:/Users/User/Documents/Schism/include/n_main.h \
   C:/Users/User/Documents/Schism/include/r_main.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
@@ -1554,28 +727,12 @@ CMakeFiles/Schism.dir/src/r_main.c.obj: C:/Users/User/Documents/Schism/src/r_mai
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h \
   C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cderr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/cguid.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h \
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -1583,166 +740,32 @@ CMakeFiles/Schism.dir/src/r_main.c.obj: C:/Users/User/Documents/Schism/src/r_mai
   C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h \
   C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h \
   C:/Users/User/Documents/msys64/ucrt64/include/ctype.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dde.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/errno.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/excpt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/float.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/imm.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/intrin.h \
   C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/limits.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h \
   C:/Users/User/Documents/msys64/ucrt64/include/malloc.h \
   C:/Users/User/Documents/msys64/ucrt64/include/math.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mcx.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/msxml.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/nb30.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ole2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/poppack.h \
   C:/Users/User/Documents/msys64/ucrt64/include/process.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processenv.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/propidl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/prsht.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h \
   C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/qos.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/reason.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sal.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/servprov.h \
   C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stddef.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdint.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdio.h \
   C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stralign.h \
   C:/Users/User/Documents/msys64/ucrt64/include/string.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/strings.h \
   C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl \
-  C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h \
   C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/tvout.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h \
   C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h \
   C:/Users/User/Documents/msys64/ucrt64/include/wchar.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winbase.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincon.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windef.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/windows.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winefs.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winerror.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnls.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winnt.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winperf.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winreg.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winscard.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winspool.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winuser.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/winver.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h \
-  C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h \
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h \
@@ -1871,41 +894,29 @@ CMakeFiles/Schism.dir/src/r_main.c.obj: C:/Users/User/Documents/Schism/src/r_mai
   C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h
 
 
-C:/Users/User/Documents/Schism/src/n_main.c:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveoptintrin.h:
 
-C:/Users/User/Documents/Schism/include/r_main.h:
-
-C:/Users/User/Documents/Schism/include/g_util.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavesintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xopintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wmmintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wbnoinvdintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vpclmulqdqintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/waitpkgintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/usermsrintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tbmintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
+
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm4intrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wbnoinvdintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm3intrin.h:
 
@@ -1913,716 +924,424 @@ C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/serializeintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/popcntintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movrsintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm3dnow.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lwpintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/enqcmdintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clzerointrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clwbintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clflushoptintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cldemoteintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmiintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint16intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxifmaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqvlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnniintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmiintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2vlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/keylockerintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512dqintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16vlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx2intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2satcvtintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2copyintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mciapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/lzexpand.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/limits.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmivlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/consoleapi3.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/ktmtypes.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/threadpoollegacyapiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/fltwinerror.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/ioapiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/float.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/commdlg.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/memoryapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vpclmulqdqintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pkuintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/imm.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchiintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/wincon.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/heapapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/handleapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/fileapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/errhandlingapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512satcvtintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winuser.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/enet/types.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/objbase.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtileintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/dpapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_image.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/debugapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/libloaderapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/datetimeapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wtypes.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cmpccxaddintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_loadso.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winnt.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_error.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/joystickapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_power.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/excpt.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/consoleapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mcx.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/combaseapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ws1_undef.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/cguid.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winioctl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/pshpack8.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/cderr.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitxintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/ole2.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movrsintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm3dnow.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/winerror.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/waitpkgintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/winnls.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/apisetcconv.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/bemapiset.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lwpintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_stdinc.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/keylockerintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_unicode.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h:
-
-C:/Users/User/Documents/Schism/src/e_main.c:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/enet/list.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/string.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_pixels.h:
-
-C:/Users/User/Documents/Schism/src/g_data.c:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/processtopologyapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winapifamily.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/enet/protocol.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/oleidl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/urlmon.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winbase.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/enet/win32.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_joystick.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rwops.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/dde.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchwintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fmaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hints.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_events.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gesture.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/minwinbase.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/hresetintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_sensor.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fmaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/enqcmdintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cmpccxaddintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clzerointrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clflushoptintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cldemoteintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cetintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint8intrin.h:
+
+C:/Users/User/Documents/Schism/include/r_main.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxifmaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectvlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnnivlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnniintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vldqintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlbwintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmivlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmiintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clwbintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqvlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2vlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/popcntintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/begin_code.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_thread.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512dqintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/errno.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_render.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/shaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rect.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/ctype.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_shape.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/gfniintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx2intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/usermsrintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/stdlib.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxint8intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavesintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmiintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wctype.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mouse.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_misc.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512convertintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2convertintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_scancode.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_log.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_cpuinfo.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_touch.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxneconvertintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_timer.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mutex.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_version.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keycode.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
+
+C:/Users/User/Documents/Schism/include/g_main.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h:
+
+C:/Users/User/Documents/Schism/include/g_util.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/malloc.h:
+
+C:/Users/User/Documents/Schism/include/e_main.h:
+
+C:/Users/User/Documents/Schism/src/r_main.c:
+
+C:/Users/User/Documents/Schism/include/g_data.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/stddef.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_endian.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h:
+
+C:/Users/User/Documents/Schism/include/g_defs.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gamecontroller.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_filesystem.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_guid.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/mmeapi.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86gprintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/objidlbase.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_stdinc.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/securitybaseapi.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_sensor.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gamecontroller.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keyboard.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512bf16intrin.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_gesture.h:
 
-C:/Users/User/Documents/Schism/include/g_defs.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2copyintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/inaddr.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm4intrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/gfniintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_events.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hints.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_image.h:
+
+C:/Users/User/Documents/Schism/src/g_data.c:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchwintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rwops.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_joystick.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_pixels.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stat64.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtransposeintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_endian.h:
+C:/Users/User/Documents/Schism/src/e_main.c:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_version.h:
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw_stdarg.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/driverspecs.h:
+C:/Users/User/Documents/Schism/src/g_main.c:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mutex.h:
+C:/Users/User/Documents/msys64/ucrt64/include/strings.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bwintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_power.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_timer.h:
+C:/Users/User/Documents/msys64/ucrt64/include/corecrt.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/_timeval.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/ncrypt.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/threadpoolapiset.h:
+C:/Users/User/Documents/msys64/ucrt64/include/corecrt_startup.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/include/process.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hidapi.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtf32intrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/enet/callbacks.h:
+C:/Users/User/Documents/msys64/ucrt64/include/corecrt_stdio_config.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_cpuinfo.h:
+C:/Users/User/Documents/msys64/ucrt64/include/string.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_log.h:
+C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wstdlib.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_scancode.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/immintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/math.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_error.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/wincrypt.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_loadso.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_haptic.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxmovrsintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/crtdefs.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pkuintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/float.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512mediaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/limits.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/inttypes.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/intrin-impl.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/wchar.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/sec_api/string_s.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/wchar.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_bsd_types.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wow64apiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/ddeml.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcasync.h:
-
-C:/Users/User/Documents/Schism/include/g_data.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/apiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_fd_types.h:
-
-C:/Users/User/Documents/Schism/include/e_main.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/oaidl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512mediaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winspool.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/malloc.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/enet/enet.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/oleauto.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/timeapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcsal.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/immintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keycode.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/unknwn.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cetintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h:
-
-C:/Users/User/Documents/Schism/include/g_main.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/concurrencysal.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/utilapiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sdkddkver.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vldqintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/consoleapi2.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/bcrypt.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_misc.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpc.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_touch.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/guiddef.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint8intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlbwintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mouse.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wctype.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sal.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxmovrsintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stdio.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xopintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winefs.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/shaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_shape.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/ctype.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_rect.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/fibersapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/nb30.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/pshpack1.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_render.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/realtimeapiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/processenv.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winreg.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_system.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxbf16intrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_thread.h:
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/close_code.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/minwindef.h:
+C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdio_s.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_ip_types.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wingdi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mmsystem.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp16intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mmsyscom.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxneconvertintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_haptic.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/namedpipeapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp8intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/msxml.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/namespaceapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/playsoundapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/dlgs.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/objidl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcndr.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/process.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/processthreadsapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stdlib_s.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/profileapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/prsht.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_socket_types.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsa_errnos.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/psdk_inc/_wsadata.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/basetsd.h:
-
-C:/Users/User/Documents/Schism/include/n_main.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sysinfoapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/pshpack4.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/securityappcontainer.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512convertintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/jobapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/qos.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/reason.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcdce.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcdcep.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcnsi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/poppack.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/virtdisk.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vnnivlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/mmiscapi2.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcnsip.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/rpcnterr.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sdks/_mingw_ddk.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/propidl.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/sec_api/stralign_s.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/servprov.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winver.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/shellapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/specstrings.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stdarg.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgvlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/interlockedapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wtypesbase.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_system.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stddef.h:
-
-C:/Users/User/Documents/Schism/src/r_main.c:
+C:/Users/User/Documents/msys64/ucrt64/include/setjmp.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/stdint.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/winperf.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stralign.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winsvc.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stringapiset.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winnetwk.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectvlintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/errno.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/strings.h:
+C:/Users/User/Documents/msys64/ucrt64/include/stdio.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/swprintf.inl:
 
-C:/Users/User/Documents/msys64/ucrt64/include/synchapi.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/sys/types.h:
 
-C:/Users/User/Documents/msys64/ucrt64/include/ws2def.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2satcvtintrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2convertintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/systemtopologyapi.h:
-
-C:/Users/User/Documents/Schism/src/g_main.c:
-
-C:/Users/User/Documents/msys64/ucrt64/include/tvout.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/pshpack2.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/unknwnbase.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wincontypes.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsaveoptintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/windef.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winsock2.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86gprintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/windows.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winscard.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winsmcrd.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxint8intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keyboard.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/winsock.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/timezoneapi.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/wnnc.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/vadefs.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxavx512intrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h:
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp8intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/sec_api/wchar_s.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtileintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512bf16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hidapi.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/math.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16vlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512satcvtintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgvlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bwintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h:

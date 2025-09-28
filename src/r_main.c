@@ -37,6 +37,54 @@ void r_render() {
     plane.x = cosf(-player.rot) * 0.66f; //0 in lodev tutorial -0.66f in mine
     plane.y = sinf(-player.rot) * 0.66f; //-0.66 in lodev tutorial, 0 in mine
     
+	
+	for (int y = 0; y < state.scrH/2; y++) {
+		vec2_s rayDir1 = {
+			dir.x - plane.x,
+			dir.y - plane.y
+		};
+		vec2_s rayDir2 = {
+			dir.x + plane.x,
+			dir.y + plane.y
+		};
+		
+		float camZ = state.scrH / 2.0f;
+		
+		int centY = y - state.scrH / 2;
+		
+		float rowdis = camZ / centY;
+		
+		vec2_s floorStep = {
+			rowdis * (rayDir2.x - rayDir1.x) / state.scrW,
+			rowdis * (rayDir2.y - rayDir1.y) / state.scrW
+		};
+		vec2_s floor = {
+			rowdis * rayDir1.x - player.pos.x,
+			rowdis * rayDir1.y - player.pos.y
+		};
+		for (int x = 0; x < state.scrW; ++x) {
+			vec2i_s cell = {
+				floor.x,
+				floor.y
+			};
+			
+			vec2i_s t = {
+				(int)(wallTextureRes * (floor.x - cell.x)) & (wallTextureRes - 1),
+				(int)(wallTextureRes * (floor.y - cell.y)) & (wallTextureRes - 1)
+			};
+			floor.x += floorStep.x;
+			floor.y += floorStep.y;
+			
+			uint32_t floorColor = currentLevel.textures[currentLevel.floorTexture][t.y * wallTextureRes + t.x];
+			
+			// ceilColor /= floorX/20.0f;
+			// floorColor /= floorY/20.0f;
+						
+			r_setPixel(x, state.scrH - y - 1, floorColor);
+
+		}
+	}
+
     for (int x = 0; x < state.scrW; x++) {
         vec2i_s cell = {
             (int)player.pos.x,
@@ -86,7 +134,7 @@ void r_render() {
                 cell.y += step.y;
                 side = 1;
             }
-            if (currentLevel.data[cell.y * currentLevel.width + cell.x] != 0) {
+            if (currentLevel.data[cell.y * currentLevel.width + cell.x] != '0') {
                 hit = true;
             }
         }
@@ -112,7 +160,7 @@ void r_render() {
 
         float texPos = (y0 - state.scrH / 2 + lineHeight / 2) * inc;
 
-        int texture = currentLevel.data[cell.y * currentLevel.width + cell.x];
+        int texture = (int)(currentLevel.data[cell.y * currentLevel.width + cell.x] - '0');
         
         for (int y = y0; y < y1; y++) {
             tex.y = (int)texPos & (wallTextureRes - 1);
@@ -128,7 +176,7 @@ void r_render() {
             currentLevel.entities[e].pos.x - player.pos.x,
             currentLevel.entities[e].pos.y - player.pos.y
         };
-        
+     
         float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
 
         vec2_s spriteTransform = {
@@ -167,60 +215,61 @@ void r_render() {
         }
     }
 
-    for (int e = 0; e < clientCount; e++) {
-        vec2_s spritePos = {
-            netEntities[e].pos.x - player.pos.x,
-            netEntities[e].pos.y - player.pos.y
-        };
+    // for (int e = 0; e < clientCount; e++) {
+    //     vec2_s spritePos = {
+    //         netEntities[e].pos.x - player.pos.x,
+    //         netEntities[e].pos.y - player.pos.y
+    //     };
         
-        float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
+    //     float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
 
-        vec2_s spriteTransform = {
-            invDet * (dir.y * spritePos.x - dir.x * spritePos.y),
-            invDet * (-plane.y * spritePos.x + plane.x * spritePos.y)
-        };
+    //     vec2_s spriteTransform = {
+    //         invDet * (dir.y * spritePos.x - dir.x * spritePos.y),
+    //         invDet * (-plane.y * spritePos.x + plane.x * spritePos.y)
+    //     };
 
-        int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
+    //     int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
 
-        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * NETWORKED_ENEMY_HEIGHT;
+    //     int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * NETWORKED_ENEMY_HEIGHT;
 
-        vec2i_s spriteDrawStart = {
-            clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
-        };
-        vec2i_s spriteDrawEnd = {
-            clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
-        };
+    //     vec2i_s spriteDrawStart = {
+    //         clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+    //         clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+    //     };
+    //     vec2i_s spriteDrawEnd = {
+    //         clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
+    //         clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+    //     };
 
-        for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
-            vec2i_s texPos;
-            texPos.x = (int)(256 * (x - (-spriteScreenSize / 2 + spriteScreenPosX)) * spriteTextureRes / spriteScreenSize) / 256;
+    //     for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
+    //         vec2i_s texPos;
+    //         texPos.x = (int)(256 * (x - (-spriteScreenSize / 2 + spriteScreenPosX)) * spriteTextureRes / spriteScreenSize) / 256;
         
-            if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
-                for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
-                    int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
-                    texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
-                    uint32_t color = currentLevel.sprites[NETWORKED_ENEMY_SPRITE][texPos.y * spriteTextureRes + texPos.x];
-                    if (color) {
-                        r_setPixel(x, y, color);
-                        zBuffer[x] = spriteTransform.y;
-                    }
-                }
-            }
-        }
-    }
+    //         if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
+    //             for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
+    //                 int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
+    //                 texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
+    //                 uint32_t color = currentLevel.sprites[NETWORKED_ENEMY_SPRITE][texPos.y * spriteTextureRes + texPos.x];
+    //                 if (color) {
+    //                     r_setPixel(x, y, color);
+    //                     zBuffer[x] = spriteTransform.y;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     
 
     SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
     SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
 
-    SDL_RenderCopy(state.renderer, 
-        weaponManager.weapons[weaponManager.currentWeapon].textures[weaponManager.weapons[weaponManager.currentWeapon].frame].texture,
-        NULL,
-        &weaponManager.weapons[weaponManager.currentWeapon].rect
-    );
-    
+    if (weaponManager.currentWeapon != UNARMED) {
+        SDL_RenderCopy(state.renderer, 
+            weaponManager.weapons[weaponManager.currentWeapon].textures[weaponManager.weapons[weaponManager.currentWeapon].frame].texture,
+            NULL,
+            &weaponManager.rect
+        );
+    }
     SDL_RenderPresent(state.renderer);
 }
 

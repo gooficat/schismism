@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: Schism
-# Configurations: Debug
+# Configurations: 
 # =============================================================================
 
 #############################################
@@ -20,11 +20,6 @@
 
 ninja_required_version = 1.5
 
-
-#############################################
-# Set configuration variable for custom commands.
-
-CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/User/Documents/c-software-rendering-starter/build/
+cmake_ninja_workdir = C$:/Users/User/Documents/Schism/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target Schism
 
@@ -49,35 +44,33 @@ cmake_ninja_workdir = C$:/Users/User/Documents/c-software-rendering-starter/buil
 
 build cmake_object_order_depends_target_Schism: phony || .
 
-build CMakeFiles/Schism.dir/src/e_main.c.obj: C_COMPILER__Schism_unscanned_Debug C$:/Users/User/Documents/c-software-rendering-starter/src/e_main.c || cmake_object_order_depends_target_Schism
-  CONFIG = Debug
+build CMakeFiles/Schism.dir/src/e_main.c.obj: C_COMPILER__Schism_unscanned_ C$:/Users/User/Documents/Schism/src/e_main.c || cmake_object_order_depends_target_Schism
   DEP_FILE = CMakeFiles\Schism.dir\src\e_main.c.obj.d
-  FLAGS = -g -Wall -Werror
-  INCLUDES = -IC:/Users/User/Documents/c-software-rendering-starter/include
+  INCLUDES = -IC:/Users/User/Documents/Schism/include
   OBJECT_DIR = CMakeFiles\Schism.dir
   OBJECT_FILE_DIR = CMakeFiles\Schism.dir\src
 
-build CMakeFiles/Schism.dir/src/g_data.c.obj: C_COMPILER__Schism_unscanned_Debug C$:/Users/User/Documents/c-software-rendering-starter/src/g_data.c || cmake_object_order_depends_target_Schism
-  CONFIG = Debug
+build CMakeFiles/Schism.dir/src/g_data.c.obj: C_COMPILER__Schism_unscanned_ C$:/Users/User/Documents/Schism/src/g_data.c || cmake_object_order_depends_target_Schism
   DEP_FILE = CMakeFiles\Schism.dir\src\g_data.c.obj.d
-  FLAGS = -g -Wall -Werror
-  INCLUDES = -IC:/Users/User/Documents/c-software-rendering-starter/include
+  INCLUDES = -IC:/Users/User/Documents/Schism/include
   OBJECT_DIR = CMakeFiles\Schism.dir
   OBJECT_FILE_DIR = CMakeFiles\Schism.dir\src
 
-build CMakeFiles/Schism.dir/src/g_main.c.obj: C_COMPILER__Schism_unscanned_Debug C$:/Users/User/Documents/c-software-rendering-starter/src/g_main.c || cmake_object_order_depends_target_Schism
-  CONFIG = Debug
+build CMakeFiles/Schism.dir/src/g_main.c.obj: C_COMPILER__Schism_unscanned_ C$:/Users/User/Documents/Schism/src/g_main.c || cmake_object_order_depends_target_Schism
   DEP_FILE = CMakeFiles\Schism.dir\src\g_main.c.obj.d
-  FLAGS = -g -Wall -Werror
-  INCLUDES = -IC:/Users/User/Documents/c-software-rendering-starter/include
+  INCLUDES = -IC:/Users/User/Documents/Schism/include
   OBJECT_DIR = CMakeFiles\Schism.dir
   OBJECT_FILE_DIR = CMakeFiles\Schism.dir\src
 
-build CMakeFiles/Schism.dir/src/r_main.c.obj: C_COMPILER__Schism_unscanned_Debug C$:/Users/User/Documents/c-software-rendering-starter/src/r_main.c || cmake_object_order_depends_target_Schism
-  CONFIG = Debug
+build CMakeFiles/Schism.dir/src/n_main.c.obj: C_COMPILER__Schism_unscanned_ C$:/Users/User/Documents/Schism/src/n_main.c || cmake_object_order_depends_target_Schism
+  DEP_FILE = CMakeFiles\Schism.dir\src\n_main.c.obj.d
+  INCLUDES = -IC:/Users/User/Documents/Schism/include
+  OBJECT_DIR = CMakeFiles\Schism.dir
+  OBJECT_FILE_DIR = CMakeFiles\Schism.dir\src
+
+build CMakeFiles/Schism.dir/src/r_main.c.obj: C_COMPILER__Schism_unscanned_ C$:/Users/User/Documents/Schism/src/r_main.c || cmake_object_order_depends_target_Schism
   DEP_FILE = CMakeFiles\Schism.dir\src\r_main.c.obj.d
-  FLAGS = -g -Wall -Werror
-  INCLUDES = -IC:/Users/User/Documents/c-software-rendering-starter/include
+  INCLUDES = -IC:/Users/User/Documents/Schism/include
   OBJECT_DIR = CMakeFiles\Schism.dir
   OBJECT_FILE_DIR = CMakeFiles\Schism.dir\src
 
@@ -89,10 +82,8 @@ build CMakeFiles/Schism.dir/src/r_main.c.obj: C_COMPILER__Schism_unscanned_Debug
 #############################################
 # Link the executable Schism.exe
 
-build Schism.exe: C_EXECUTABLE_LINKER__Schism_Debug CMakeFiles/Schism.dir/src/e_main.c.obj CMakeFiles/Schism.dir/src/g_data.c.obj CMakeFiles/Schism.dir/src/g_main.c.obj CMakeFiles/Schism.dir/src/r_main.c.obj
-  CONFIG = Debug
-  FLAGS = -g
-  LINK_LIBRARIES = -lSDL2  -lSDL2_Image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build Schism.exe: C_EXECUTABLE_LINKER__Schism_ CMakeFiles/Schism.dir/src/e_main.c.obj CMakeFiles/Schism.dir/src/g_data.c.obj CMakeFiles/Schism.dir/src/g_main.c.obj CMakeFiles/Schism.dir/src/n_main.c.obj CMakeFiles/Schism.dir/src/r_main.c.obj
+  LINK_LIBRARIES = -lSDL2  -lSDL2_Image  -lenet  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Schism.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -105,7 +96,7 @@ build Schism.exe: C_EXECUTABLE_LINKER__Schism_Debug CMakeFiles/Schism.dir/src/e_
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\User\Documents\c-software-rendering-starter\build && C:\Users\User\Documents\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\User\Documents\Schism\build && C:\Users\User\Documents\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -116,7 +107,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\User\Documents\c-software-rendering-starter\build && C:\Users\User\Documents\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\User\Documents\c-software-rendering-starter -BC:\Users\User\Documents\c-software-rendering-starter\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\User\Documents\Schism\build && C:\Users\User\Documents\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\User\Documents\Schism -BC:\Users\User\Documents\Schism\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,7 +125,7 @@ build Schism: phony Schism.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/User/Documents/c-software-rendering-starter/build
+# Folder: C:/Users/User/Documents/Schism/build
 
 build all: phony Schism.exe
 
@@ -145,14 +136,14 @@ build all: phony Schism.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/User/Documents/c-software-rendering-starter/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/User/Documents/c-software-rendering-starter/CMakeLists.txt C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/sdlfind.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findlibjxl.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findwebp.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FeatureSummary.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindJPEG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPNG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindTIFF.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindZLIB.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.1.0/CMakeCCompiler.cmake CMakeFiles/4.1.0/CMakeRCCompiler.cmake CMakeFiles/4.1.0/CMakeSystem.cmake
+build build.ninja C$:/Users/User/Documents/Schism/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/User/Documents/Schism/CMakeLists.txt C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/sdlfind.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findlibjxl.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findwebp.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FeatureSummary.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindJPEG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPNG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindTIFF.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindZLIB.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.1.0/CMakeCCompiler.cmake CMakeFiles/4.1.0/CMakeRCCompiler.cmake CMakeFiles/4.1.0/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/User/Documents/c-software-rendering-starter/CMakeLists.txt C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/sdlfind.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findlibjxl.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findwebp.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FeatureSummary.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindJPEG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPNG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindTIFF.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindZLIB.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.1.0/CMakeCCompiler.cmake CMakeFiles/4.1.0/CMakeRCCompiler.cmake CMakeFiles/4.1.0/CMakeSystem.cmake: phony
+build C$:/Users/User/Documents/Schism/CMakeLists.txt C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2Targets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2/sdlfind.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findlibjxl.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/Findwebp.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/SDL2_image/sdl2_image-config.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-release.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config-version.cmake C$:/Users/User/Documents/msys64/ucrt64/lib/cmake/libavif/libavif-config.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FeatureSummary.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindJPEG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPNG.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindTIFF.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/FindZLIB.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Documents/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.1.0/CMakeCCompiler.cmake CMakeFiles/4.1.0/CMakeRCCompiler.cmake CMakeFiles/4.1.0/CMakeSystem.cmake: phony
 
 
 #############################################

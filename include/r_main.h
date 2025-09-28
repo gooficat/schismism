@@ -4,7 +4,7 @@
 #include "g_data.h"
 #include "g_util.h"
 
-#include "n_main.h"
+//#include "n_main.h"
 #include "e_main.h"
 
 extern uint32_t* pixels;

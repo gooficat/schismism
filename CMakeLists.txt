@@ -11,10 +11,9 @@ file(GLOB SOURCES src/*.c)
 
 add_executable(Schism ${SOURCES})
 
-target_compile_options(Schism PRIVATE -Wall -Werror)
+target_compile_options(Schism PRIVATE -Wall)
 
 target_link_libraries(Schism
     SDL2
     SDL2_Image
-    enet
 )
