@@ -48,7 +48,7 @@ void r_render() {
 			dir.y + plane.y
 		};
 		
-		float camZ = state.scrH / 2.0f;
+		float camZ = (state.scrH / 2.0f) + (player.z * state.scrH);
 		
 		int centY = y - state.scrH / 2;
 		
@@ -142,8 +142,8 @@ void r_render() {
 
         int lineHeight = (int)(state.scrH / perpWallDis);
 
-        int y0 = clamp(-lineHeight / 2 + state.scrH / 2, 0, state.scrH);
-        int y1 = clamp(lineHeight / 2 + state.scrH / 2, 0, state.scrH);
+        int y0 = clamp((-lineHeight / 2 + state.scrH / 2) + (player.z / perpWallDis * state.scrH), 0, state.scrH);
+        int y1 = clamp((lineHeight / 2 + state.scrH / 2) + (player.z / perpWallDis * state.scrH), 0, state.scrH);
 
         // uint8_t a = clamp(perpWallDis*20.0f, 15, 255);
         // r_setVLine(x, y0, y1, r_rgba(0, 255, 150, a));
@@ -158,7 +158,7 @@ void r_render() {
 
         float inc = 1.0f * wallTextureRes / lineHeight;
 
-        float texPos = (y0 - state.scrH / 2 + lineHeight / 2) * inc;
+        float texPos = (y0 - state.scrH / 2 + lineHeight / 2  - (player.z / perpWallDis * state.scrH)) * inc;
 
         int texture = (int)(currentLevel.data[cell.y * currentLevel.width + cell.x] - '0');
         
@@ -166,7 +166,7 @@ void r_render() {
             tex.y = (int)texPos & (wallTextureRes - 1);
             texPos += inc;
             
-            r_setPixel(x, y, currentLevel.textures[texture][tex.y * wallTextureRes + tex.x]);
+            r_setPixel(x, y, currentLevel.textures[texture][(tex.y * wallTextureRes + tex.x)]);
             zBuffer[x] = perpWallDis;
         }
     }
@@ -214,11 +214,11 @@ void r_render() {
 
         vec2i_s spriteDrawStart = {
             clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(-spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+            clamp(-spriteScreenSize / 2 + state.scrH / 2  + (player.z / spriteTransform.y * state.scrH), 0, state.scrH-1)
         };
         vec2i_s spriteDrawEnd = {
             clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(spriteScreenSize / 2 + state.scrH / 2, 0, state.scrH-1)
+            clamp(spriteScreenSize / 2 + state.scrH / 2 + (player.z / spriteTransform.y * state.scrH), 0, state.scrH-1)
         };
 
         for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
@@ -227,7 +227,7 @@ void r_render() {
         
             if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
                 for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
-                    int d = (y) * 256 - state.scrH * 128 + spriteScreenSize * 128;
+                    int d = (y - (player.z / spriteTransform.y * state.scrH)) * 256 - state.scrH * 128 + spriteScreenSize * 128;
                     texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
                     uint32_t color = currentLevel.sprites[currentLevel.entities[e].spriteId][texPos.y * spriteTextureRes + texPos.x];
                     if (color) {

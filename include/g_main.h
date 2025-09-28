@@ -44,6 +44,6 @@ extern struct weapon_manager {
     double swapDelay, swapTimer;
 } weaponManager;
 
-extern struct entity player;
+extern struct player player;
 
 void g_terminate();

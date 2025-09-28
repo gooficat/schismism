@@ -83,6 +83,7 @@ void d_init(const char* file) {
 					case 'P':
 						player.pos.x = (float)x + 0.5f;
 						player.pos.y = (float)y + 0.5f;
+						player.z = 0;
 						break;
 				}
 				currentLevel.data[dSiz++] = '0';

@@ -11,11 +11,18 @@
 
 struct entity {
 	vec2_s pos, vel;
+	float speed;
+	float accel, decel;
+	uint8_t spriteId;
+};
+
+struct player {
+	vec2_s pos, vel;
+	float z;
 	float rot;
 	float speed;
 	float accel, decel;
 	float rotSpeed;
-	uint8_t spriteId;
 	uint32_t netId;
 };
 
@@ -32,3 +39,5 @@ struct weapon {
 };
 
 void e_move_and_slide(struct entity* e);
+
+void p_move_and_slide(struct player* e);

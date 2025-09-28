@@ -4,7 +4,7 @@
 
 struct game_state state;
 struct weapon_manager weaponManager;
-struct entity player;
+struct player player;
 
 
 void g_terminate() {
@@ -33,6 +33,12 @@ void g_update() {
 	if (state.keys[SDL_SCANCODE_RIGHT]) {
 	   player.rot += player.rotSpeed * state.deltaTime;
 	}
+	if (state.keys[SDL_SCANCODE_LSHIFT]) {
+		player.z -= player.speed * state.deltaTime;
+	}
+	if (state.keys[SDL_SCANCODE_SPACE]) {
+	   player.z += player.speed * state.deltaTime;
+	}
 	if (state.keys[SDL_SCANCODE_RSHIFT] &&
 		!weaponManager.weapons[weaponManager.currentWeapon].firing) {
 		weaponManager.weapons[weaponManager.currentWeapon].firing = true;
@@ -54,7 +60,7 @@ void g_update() {
 	player.vel.x = lerp(player.vel.x, vel.x, player.accel);
 	player.vel.y = lerp(player.vel.y, vel.y, player.accel);
 
-	e_move_and_slide(&player);
+	p_move_and_slide(&player);
 
 	if (weaponManager.weapons[weaponManager.currentWeapon].firing) {
 		if (SDL_GetTicks() - weaponManager.weapons[weaponManager.currentWeapon].frameTime >= weaponManager.weapons[weaponManager.currentWeapon].timePerFrame) {
@@ -72,8 +78,8 @@ void g_update() {
 
 int main() {
 	player.speed = 2.0f;
-	player.rotSpeed = player.speed*1.25f;
-	player.accel = 0.5f;
+	player.rotSpeed = 1.75f;
+	player.accel = 0.2f;
 
 	weaponManager.framesPerTexture = 4;
 	weaponManager.swapDelay = 500.0;
@@ -95,7 +101,7 @@ int main() {
 	//networking not in use
 	//n_init_client(MULTIPLAYER_HOST, MULTIPLAYER_PORT);
 	
-	d_init("../res/lvl0.txt");
+	d_init("../res/levels/0.txt");
 
 	printf("w %hhu h %hhu\n", currentLevel.width, currentLevel.length);
 	for (int i = 0; i < currentLevel.length; i++) {
