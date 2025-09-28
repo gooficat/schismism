@@ -170,7 +170,31 @@ void r_render() {
             zBuffer[x] = perpWallDis;
         }
     }
+    vec2_s spritePos = {
+        currentLevel.entities[0].pos.x - player.pos.x,
+        currentLevel.entities[0].pos.y - player.pos.y
+    };
     
+    float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
+    float prevY = invDet * (-plane.y * spritePos.x + plane.x * spritePos.y);
+
+    for (int e = 1; e < currentLevel.entityCount; e++) {
+        vec2_s spritePos = {
+            currentLevel.entities[e].pos.x - player.pos.x,
+            currentLevel.entities[e].pos.y - player.pos.y
+        };
+     
+        float invDet = 1.0f / (plane.x * dir.y - dir.x * plane.y);
+
+        float yDist = invDet * (-plane.y * spritePos.x + plane.x * spritePos.y);
+
+        if (yDist > prevY) {
+            struct entity swp = currentLevel.entities[e];
+            currentLevel.entities[e] = currentLevel.entities[e-1];
+            currentLevel.entities[e-1] = swp;
+        }
+        prevY = yDist;
+    }
     for (int e = 0; e < currentLevel.entityCount; e++) {
         vec2_s spritePos = {
             currentLevel.entities[e].pos.x - player.pos.x,
@@ -186,7 +210,7 @@ void r_render() {
 
         int spriteScreenPosX = (int)((state.scrW / 2) * (1 + spriteTransform.x / spriteTransform.y));
 
-        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y))) * currentLevel.entities[e].height;
+        int spriteScreenSize = abs((int)(state.scrH / (spriteTransform.y)));// * currentLevel.entities[e].height;
 
         vec2i_s spriteDrawStart = {
             clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
@@ -208,7 +232,6 @@ void r_render() {
                     uint32_t color = currentLevel.sprites[currentLevel.entities[e].spriteId][texPos.y * spriteTextureRes + texPos.x];
                     if (color) {
                         r_setPixel(x, y, color);
-                        zBuffer[x] = spriteTransform.y;
                     }
                 }
             }

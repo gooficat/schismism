@@ -15,7 +15,6 @@ struct entity {
 	float speed;
 	float accel, decel;
 	float rotSpeed;
-	float height;
 	uint8_t spriteId;
 	uint32_t netId;
 };

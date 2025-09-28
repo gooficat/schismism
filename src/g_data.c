@@ -36,7 +36,6 @@ void d_init(const char* file) {
 							.pos = {x+0.5f, y+0.5f},
 							.speed = 2.0f,
 							.accel = 0.3f,
-							.height = 1,
 							.spriteId = 0
 						};
 						printf("entity %c is at %d %d", n, x, y);
@@ -47,8 +46,7 @@ void d_init(const char* file) {
 							.pos = {x+0.5f, y+0.5f},
 							.speed = 2.0f,
 							.accel = 0.3f,
-							.height = 1,
-							.spriteId = 0
+							.spriteId = 1
 						};
 						printf("entity %c is at %d %d", n, x, y);
 						break;
@@ -58,14 +56,29 @@ void d_init(const char* file) {
 							.pos = {x+0.5f, y+0.5f},
 							.speed = 2.0f,
 							.accel = 0.3f,
-							.height = 1,
-							.spriteId = 0
+							.spriteId = 2
 						};
 						printf("entity %c is at %d %d", n, x, y);
 						break;
 					case 'I':
+						currentLevel.entities = realloc(currentLevel.entities, sizeof(struct entity) * ++currentLevel.entityCount);
+						currentLevel.entities[currentLevel.entityCount-1] = (struct entity) {
+							.pos = {x+0.5f, y+0.5f},
+							.speed = 2.0f,
+							.accel = 0.3f,
+							.spriteId = 3
+						};
+						printf("entity %c is at %d %d", n, x, y);
 						break;
 					case 'O':
+						currentLevel.entities = realloc(currentLevel.entities, sizeof(struct entity) * ++currentLevel.entityCount);
+						currentLevel.entities[currentLevel.entityCount-1] = (struct entity) {
+							.pos = {x+0.5f, y+0.5f},
+							.speed = 2.0f,
+							.accel = 0.3f,
+							.spriteId = 4
+						};
+						printf("entity %c is at %d %d", n, x, y);
 						break;
 					case 'P':
 						player.pos.x = (float)x + 0.5f;
@@ -131,9 +144,13 @@ void d_init(const char* file) {
 	d_loadImageSurface("../res/images/Plaster_14.png", &currentLevel.textures[3]);
 	d_loadImageSurface("../res/images/Stone_13.png", &currentLevel.textures[4]);
 
-	currentLevel.sprites = malloc(sizeof(uint32_t) * 1);
-	currentLevel.spriteCount = 1;
+	currentLevel.sprites = malloc(sizeof(uint32_t*) * 5);
+	currentLevel.spriteCount = 5;
 	d_loadImageSurface("../res/images/enemies/enemy013.png", &currentLevel.sprites[0]);
+	d_loadImageSurface("../res/images/enemies/enemy051.png", &currentLevel.sprites[1]);
+	d_loadImageSurface("../res/images/enemies/enemy009.png", &currentLevel.sprites[2]);
+	d_loadImageSurface("../res/images/enemies/enemy008.png", &currentLevel.sprites[3]);
+	d_loadImageSurface("../res/images/enemies/enemy017.png", &currentLevel.sprites[4]);
 
 }
 
