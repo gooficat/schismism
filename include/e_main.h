@@ -5,6 +5,7 @@
 
 #include "g_defs.h"
 #include "g_data.h"
+#include "g_util.h"
 
 #include <stdbool.h>
 #include <stdint.h>

@@ -220,4 +220,5 @@ CMakeFiles/Schism.dir/src/g_data.c.obj: \
  C:/Users/User/Documents/Schism/include/g_main.h \
  C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
  C:/Users/User/Documents/Schism/include/g_defs.h \
- C:/Users/User/Documents/Schism/include/e_main.h
+ C:/Users/User/Documents/Schism/include/e_main.h \
+ C:/Users/User/Documents/Schism/include/g_util.h

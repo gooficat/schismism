@@ -221,5 +221,5 @@ CMakeFiles/Schism.dir/src/g_main.c.obj: \
  C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
  C:/Users/User/Documents/Schism/include/g_defs.h \
  C:/Users/User/Documents/Schism/include/e_main.h \
- C:/Users/User/Documents/Schism/include/r_main.h \
- C:/Users/User/Documents/Schism/include/g_util.h
+ C:/Users/User/Documents/Schism/include/g_util.h \
+ C:/Users/User/Documents/Schism/include/r_main.h

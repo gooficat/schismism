@@ -110,7 +110,7 @@ int main(int argc, char** argv) {
 	player.bobFactor = 0.0075f;
 	player.bobSpeed = 3.0f;
 	player.bobEase = 0.05f;
-	player.radius = 0.1f;
+	player.radius = 0.2f;
 	player.defaultHeight = 0.1f;
 
 	weaponManager.swapDelay = 500.0;

@@ -6,6 +6,7 @@ CMakeFiles/Schism.dir/src/e_main.c.obj: C:/Users/User/Documents/Schism/src/e_mai
   C:/Users/User/Documents/Schism/include/g_data.h \
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
+  C:/Users/User/Documents/Schism/include/g_util.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
@@ -228,6 +229,7 @@ CMakeFiles/Schism.dir/src/g_data.c.obj: C:/Users/User/Documents/Schism/src/g_dat
   C:/Users/User/Documents/Schism/include/g_data.h \
   C:/Users/User/Documents/Schism/include/g_defs.h \
   C:/Users/User/Documents/Schism/include/g_main.h \
+  C:/Users/User/Documents/Schism/include/g_util.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_assert.h \
   C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h \
@@ -1020,20 +1022,6 @@ C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h:
 
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h:
-
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/_mingw_mac.h:
@@ -1082,11 +1070,71 @@ C:/Users/User/Documents/msys64/ucrt64/include/corecrt_wctype.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mouse.h:
 
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_surface.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_audio.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/_mingw_off_t.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h:
+
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_misc.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512convertintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2convertintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
+
+C:/Users/User/Documents/Schism/include/g_main.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/malloc.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h:
+
+C:/Users/User/Documents/Schism/include/g_util.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16intrin.h:
+
+C:/Users/User/Documents/Schism/include/e_main.h:
+
+C:/Users/User/Documents/Schism/src/r_main.c:
+
+C:/Users/User/Documents/Schism/include/g_data.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h:
+
+C:/Users/User/Documents/msys64/ucrt64/include/stddef.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h:
 
@@ -1107,50 +1155,6 @@ C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_mutex.h:
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_version.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_keycode.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_config.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
-
-C:/Users/User/Documents/Schism/include/g_main.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_main.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_video.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_clipboard.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_quit.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_metal.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_locale.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_atomic.h:
-
-C:/Users/User/Documents/Schism/include/g_util.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_platform.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/malloc.h:
-
-C:/Users/User/Documents/Schism/include/e_main.h:
-
-C:/Users/User/Documents/Schism/src/r_main.c:
-
-C:/Users/User/Documents/Schism/include/g_data.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_blendmode.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_messagebox.h:
-
-C:/Users/User/Documents/msys64/ucrt64/include/stddef.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_endian.h:
 
@@ -1320,13 +1324,15 @@ C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h:
 
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h:
+
+C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
+
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/include/SDL2/SDL_hidapi.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16intrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2intrin.h:
 
@@ -1341,7 +1347,3 @@ C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
 
 C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bwintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2mediaintrin.h:
-
-C:/Users/User/Documents/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fintrin.h:
