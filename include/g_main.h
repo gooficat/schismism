@@ -39,11 +39,14 @@ extern struct weapon_manager {
         AR = 2
     } currentWeapon;
     uint8_t weaponCount;
-    uint8_t framesPerTexture;
     SDL_Rect rect;
     double swapDelay, swapTimer;
 } weaponManager;
 
 extern struct player player;
 
+extern uint8_t level;
+
 void g_terminate();
+
+void g_launchLevel();

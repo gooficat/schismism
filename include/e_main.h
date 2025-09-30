@@ -14,6 +14,7 @@ struct entity {
 	float speed;
 	float accel, decel;
 	uint8_t spriteId;
+	float radius;
 };
 
 struct player {
@@ -24,6 +25,12 @@ struct player {
 	float accel, decel;
 	float rotSpeed;
 	uint32_t netId;
+	float height;
+	float defaultHeight;
+	float bobFactor;
+	float bobSpeed;
+	float bobEase;
+	float radius;
 };
 
 struct weapon {
@@ -36,6 +43,7 @@ struct weapon {
 	uint8_t frame;
 	double timePerFrame;
     double frameTime;
+	uint8_t frameCount;
 };
 
 void e_move_and_slide(struct entity* e);

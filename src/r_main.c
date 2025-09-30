@@ -28,6 +28,10 @@ void r_setPixel(int x, int y, uint32_t c) {
 
 #define r_rgba(r, g, b, a) (uint32_t)(((r & 0xFF) << 24) + ((g & 0xFF) << 16) + ((b & 0xFF) << 8) + (a & 0xFF))
 
+struct rgba {
+    uint8_t r, g, b, a;
+};
+
 void r_render() {
     memset(pixels, 0xFF444444, sizeof(uint32_t) * state.scrW * state.scrH/2);
     memset(&pixels[state.scrW * state.scrH / 2], 0, sizeof(uint32_t) * state.scrW * state.scrH/2);
@@ -48,13 +52,24 @@ void r_render() {
 			dir.y + plane.y
 		};
 		
-		float camZ = (state.scrH / 2.0f) + (player.z * state.scrH);
+		float ceilCamZ = (state.scrH / 2.0f);
+        float camZ = (state.scrH / 2.0f) + ((player.z + player.height) * state.scrH);
 		
 		int centY = y - state.scrH / 2;
 		
-		float rowdis = camZ / centY;
-		
-		vec2_s floorStep = {
+       float ceilrowdis = ceilCamZ / centY;
+        float rowdis = camZ / centY;
+
+        vec2_s ceilStep = {
+			ceilrowdis * (rayDir2.x - rayDir1.x) / state.scrW,
+			ceilrowdis * (rayDir2.y - rayDir1.y) / state.scrW
+		};
+		vec2_s ceil = {
+			ceilrowdis * rayDir1.x,
+			ceilrowdis * rayDir1.y
+		};
+
+        vec2_s floorStep = {
 			rowdis * (rayDir2.x - rayDir1.x) / state.scrW,
 			rowdis * (rayDir2.y - rayDir1.y) / state.scrW
 		};
@@ -67,23 +82,37 @@ void r_render() {
 				floor.x,
 				floor.y
 			};
+			vec2i_s ceilCell = {
+				ceil.x,
+				ceil.y
+			};
 			
 			vec2i_s t = {
 				(int)(wallTextureRes * (floor.x - cell.x)) & (wallTextureRes - 1),
 				(int)(wallTextureRes * (floor.y - cell.y)) & (wallTextureRes - 1)
 			};
+    
+            vec2i_s ct = {
+				(int)(skyTextureRes * (fmodf(ceil.x / 8.0f, skyTextureRes) - ceilCell.x)) & (skyTextureRes - 1),
+				(int)(skyTextureRes * (fmodf(ceil.y / 8.0f, skyTextureRes) - ceilCell.y)) & (skyTextureRes - 1)
+			};
 			floor.x += floorStep.x;
 			floor.y += floorStep.y;
-			
+            
+			ceil.x += ceilStep.x;
+			ceil.y += ceilStep.y;
+
 			uint32_t floorColor = currentLevel.textures[currentLevel.floorTexture][t.y * wallTextureRes + t.x];
-			
-			// ceilColor /= floorX/20.0f;
-			// floorColor /= floorY/20.0f;
-						
+            uint32_t ceilColor = currentLevel.textures[currentLevel.ceilTexture][ct.y * wallTextureRes + ct.x];
+
 			r_setPixel(x, state.scrH - y - 1, floorColor);
 
+			r_setPixel(x, y, ceilColor);
+            
+			
 		}
 	}
+
 
     for (int x = 0; x < state.scrW; x++) {
         vec2i_s cell = {
@@ -142,8 +171,8 @@ void r_render() {
 
         int lineHeight = (int)(state.scrH / perpWallDis);
 
-        int y0 = clamp((-lineHeight / 2 + state.scrH / 2) + (player.z / perpWallDis * state.scrH), 0, state.scrH);
-        int y1 = clamp((lineHeight / 2 + state.scrH / 2) + (player.z / perpWallDis * state.scrH), 0, state.scrH);
+        int y0 = clamp((-lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH);
+        int y1 = clamp((lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH);
 
         // uint8_t a = clamp(perpWallDis*20.0f, 15, 255);
         // r_setVLine(x, y0, y1, r_rgba(0, 255, 150, a));
@@ -158,15 +187,28 @@ void r_render() {
 
         float inc = 1.0f * wallTextureRes / lineHeight;
 
-        float texPos = (y0 - state.scrH / 2 + lineHeight / 2  - (player.z / perpWallDis * state.scrH)) * inc;
+        float texPos = (y0 - state.scrH / 2 + lineHeight / 2 - ((player.z + player.height) / perpWallDis * state.scrH)) * inc;
 
-        int texture = (int)(currentLevel.data[cell.y * currentLevel.width + cell.x] - '0');
+        int texture = currentLevel.data[cell.y * currentLevel.width + cell.x] - '0';
         
         for (int y = y0; y < y1; y++) {
             tex.y = (int)texPos & (wallTextureRes - 1);
             texPos += inc;
             
-            r_setPixel(x, y, currentLevel.textures[texture][(tex.y * wallTextureRes + tex.x)]);
+            uint32_t color = currentLevel.textures[texture][(tex.y * wallTextureRes + tex.x)];
+            
+
+            struct rgba rgbaColor = *(struct rgba*)(&color);
+            int8_t fact = (side + 1);
+            rgbaColor.r /= fact;
+            rgbaColor.g /= fact;
+            rgbaColor.b /= fact;
+            // rgbaColor.r = clamp((uint32_t)rgbaColor.r * lineHeight*0.001, 0, rgbaColor.r);
+            // rgbaColor.g = clamp((uint32_t)rgbaColor.g * lineHeight*0.001, 0, rgbaColor.g);
+            // rgbaColor.b = clamp((uint32_t)rgbaColor.b * lineHeight*0.001, 0, rgbaColor.b);
+            color = *(uint32_t*)(&rgbaColor);
+            
+            r_setPixel(x, y, color);
             zBuffer[x] = perpWallDis;
         }
     }
@@ -214,11 +256,11 @@ void r_render() {
 
         vec2i_s spriteDrawStart = {
             clamp(-spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(-spriteScreenSize / 2 + state.scrH / 2  + (player.z / spriteTransform.y * state.scrH), 0, state.scrH-1)
+            clamp(-spriteScreenSize / 2 + state.scrH / 2 + ((player.z + player.height) / spriteTransform.y * state.scrH), 0, state.scrH-1)
         };
         vec2i_s spriteDrawEnd = {
             clamp(spriteScreenSize / 2 + spriteScreenPosX, 0, state.scrW-1),
-            clamp(spriteScreenSize / 2 + state.scrH / 2 + (player.z / spriteTransform.y * state.scrH), 0, state.scrH-1)
+            clamp(spriteScreenSize / 2 + state.scrH / 2 + ((player.z + player.height) / spriteTransform.y * state.scrH), 0, state.scrH-1)
         };
 
         for (int x = spriteDrawStart.x; x < spriteDrawEnd.x; x++) {
@@ -227,7 +269,7 @@ void r_render() {
         
             if (spriteTransform.y > 0 && x > 0 && x < state.scrW && zBuffer[x] > spriteTransform.y) {
                 for (int y = spriteDrawStart.y; y < spriteDrawEnd.y; y++) {
-                    int d = (y - (player.z / spriteTransform.y * state.scrH)) * 256 - state.scrH * 128 + spriteScreenSize * 128;
+                    int d = (y - ((player.z + player.height) / spriteTransform.y * state.scrH)) * 256 - state.scrH * 128 + spriteScreenSize * 128;
                     texPos.y = ((d * spriteTextureRes) / spriteScreenSize) / 256;
                     uint32_t color = currentLevel.sprites[currentLevel.entities[e].spriteId][texPos.y * spriteTextureRes + texPos.x];
                     if (color) {
