@@ -12,3 +12,8 @@ extern uint32_t* pixels;
 void r_init();
 
 void r_render();
+
+void r_renderLevelEnd();
+
+void r_renderWin();
+void r_renderJoke();

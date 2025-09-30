@@ -29,6 +29,8 @@ extern struct game_state {
     double deltaTime;
     double targetFrameTime;
     uint16_t scrW, scrH;
+    bool win;
+    SDL_Texture* screens;
 } state;
 
 extern struct weapon_manager {

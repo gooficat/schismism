@@ -12,6 +12,7 @@ void d_loadImageSurface(const char* path, uint32_t** pixels, int res) {
 	SDL_FreeSurface(surface);
 }
 
+uint8_t w;
 void d_init(const char* file) {
 	FILE* f = fopen(file, "r");
 	if (!f) {
@@ -20,7 +21,15 @@ void d_init(const char* file) {
 	}
 	char lin[128];
 	fgets(lin, 128, f);
-	sscanf(lin, "w %hhu l %hhu f %hhu c %hhu", &currentLevel.width, &currentLevel.length, &currentLevel.floorTexture, &currentLevel.ceilTexture);
+	sscanf(lin, "w %hhu l %hhu f %hhu c %hhu s %hhu win %hhu", &currentLevel.width, &currentLevel.length, &currentLevel.floorTexture, &currentLevel.ceilTexture, &weaponManager.currentWeapon, &w);
+	printf("%hhu", w);
+	if (w) {
+		currentLevel.lastLevel = true;
+	}
+	else {
+		currentLevel.lastLevel = false;
+	}
+
 	currentLevel.data = calloc(currentLevel.width * currentLevel.length, sizeof(char));
 	uint16_t dSiz = 0;
 	int x = 0, y = 0;
@@ -112,35 +121,35 @@ void d_init(const char* file) {
 	weaponManager.weapons = malloc(sizeof(struct weapon) * 3);
 	weaponManager.weaponCount = 3;
 
-	weaponManager.currentWeapon = 1;
-
-	weaponManager.weapons[SHOTGUN] = (struct weapon){
+	weaponManager.weapons[1] = (struct weapon){
 		.textures = malloc(sizeof(struct image) * 2),
 		.magSize = 2,
 		.bullets = 2,
 		.firing = false,
 		.frame = 0,
-		.frameCount = 3
+		.frameCount = 3,
+		.pickedUp = false
 	};
 	d_loadImage("../res/images/shotgun/pixil-frame-2.png", &weaponManager.weapons[1].textures[0]);
 	d_loadImage("../res/images/shotgun/pixil-frame-1.png", &weaponManager.weapons[1].textures[1]);
 	d_loadImage("../res/images/shotgun/pixil-frame-0.png", &weaponManager.weapons[1].textures[2]);
 	
-	weaponManager.weapons[SHOTGUN].timePerFrame = 150.0;
+	weaponManager.weapons[1].timePerFrame = 200.0;
 
-	weaponManager.weapons[AR] = (struct weapon){
+	weaponManager.weapons[2] = (struct weapon){
 		.textures = malloc(sizeof(struct image) * 4),
 		.magSize = 2,
 		.bullets = 2,
 		.firing = false,
 		.frame = 0,
-		.frameCount = 3
+		.frameCount = 3,
+		.pickedUp = false
 	};
 	d_loadImage("../res/images/pistol/pixil-frame-0.png", &weaponManager.weapons[2].textures[0]);
 	d_loadImage("../res/images/pistol/pixil-frame-2.png", &weaponManager.weapons[2].textures[1]);
 	d_loadImage("../res/images/pistol/pixil-frame-1.png", &weaponManager.weapons[2].textures[2]);
 
-	weaponManager.weapons[AR].timePerFrame = 150.0;
+	weaponManager.weapons[2].timePerFrame = 150.0;
 
 	currentLevel.textures = malloc(sizeof(uint32_t*) * 10);
 	currentLevel.textureCount = 10;
@@ -161,6 +170,7 @@ void d_init(const char* file) {
 	d_loadImageSurface("../res/images/robot-mallcop.png", &currentLevel.sprites[3], wallTextureRes);
 	d_loadImageSurface("../res/images/robot-mallcop.png", &currentLevel.sprites[4], wallTextureRes);
 
+	weaponManager.weapons[weaponManager.currentWeapon].pickedUp = true;
 }
 
 void d_terminate() {

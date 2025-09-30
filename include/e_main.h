@@ -45,6 +45,7 @@ struct weapon {
 	double timePerFrame;
     double frameTime;
 	uint8_t frameCount;
+	bool pickedUp;
 };
 
 void e_move_and_slide(struct entity* e);

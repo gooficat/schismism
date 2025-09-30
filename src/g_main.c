@@ -126,6 +126,7 @@ int main(int argc, char** argv) {
 	levelStart:
 	char lvlName[] = "../res/levels/0.txt";
 	lvlName[14] = level + '0';
+	printf(lvlName);
 	d_init(lvlName);
 
 
@@ -177,10 +178,54 @@ int main(int argc, char** argv) {
 			state.deltaTime = state.targetFrameTime;
 		}
 	}
-	if (level != initialLevel) {
-		goto levelStart;
+	if (state.win) {
+		r_renderWin();
+		while (true) {
+			while (SDL_PollEvent(&event)) {
+				switch (event.type) {
+					case SDL_QUIT:
+						goto quit;
+						break;
+					case SDL_KEYDOWN:
+						state.keys[event.key.keysym.scancode] = true;
+						break;
+					case SDL_KEYUP:
+						state.keys[event.key.keysym.scancode] = false;
+						break;
+					default:
+						break;
+				}
+			}
+			if (state.keys[SDL_SCANCODE_SPACE]) {
+				r_renderJoke();
+			}
+		}
+	}
+	else if (level != initialLevel) {
+		bool startAgain = false;
+		r_renderLevelEnd();
+		//goto levelStart;
+		while (!startAgain) {
+			while (SDL_PollEvent(&event)) {
+				switch (event.type) {
+					case SDL_QUIT:
+						goto quit;
+						break;
+					case SDL_KEYDOWN:
+						state.keys[event.key.keysym.scancode] = true;
+						goto levelStart;
+						break;
+					case SDL_KEYUP:
+						state.keys[event.key.keysym.scancode] = false;
+						break;
+					default:
+						break;
+				}
+			}
+		}
 	}
 	g_terminate();
+	quit:
 	return 0;
 }
 

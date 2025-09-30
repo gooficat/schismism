@@ -7,6 +7,8 @@ double *zBuffer;
 
 #define deFloat 256
 
+SDL_Rect fullScreen;
+
 void r_init() {
     pixels = (uint32_t*)malloc(sizeof(uint32_t) * state.scrW * state.scrH);
 
@@ -15,6 +17,10 @@ void r_init() {
     renderTexture = SDL_CreateTexture(state.renderer, SDL_PIXELFORMAT_RGBA32, SDL_TEXTUREACCESS_STREAMING, state.scrW, state.scrH);
     if (!renderTexture) printf("render texture init failed\n");
     SDL_RenderSetLogicalSize(state.renderer, state.scrW, state.scrH);
+    fullScreen = (SDL_Rect){
+        .x = (state.scrW-state.scrH)/2, .y = 0,
+        .w = state.scrH, .h = state.scrH
+    };
 }
 
 void r_setPixel(int x, int y, uint32_t c) {
@@ -33,8 +39,8 @@ struct rgba {
 };
 
 void r_render() {
-    memset(pixels, 0xFF444444, sizeof(uint32_t) * state.scrW * state.scrH/2);
-    memset(&pixels[state.scrW * state.scrH / 2], 0, sizeof(uint32_t) * state.scrW * state.scrH/2);
+    // memset(pixels, 0xFF444444, sizeof(uint32_t) * state.scrW * state.scrH/2);
+    // memset(&pixels[state.scrW * state.scrH / 2], 0, sizeof(uint32_t) * state.scrW * state.scrH/2);
     vec2_s dir, plane;
     dir.x = sinf(player.rot); //-1 in lodev tutorial, 0 in mine
     dir.y = cosf(player.rot); //0 in lodev tutorial, 1 in mine
@@ -171,8 +177,8 @@ void r_render() {
 
         int lineHeight = (int)(state.scrH / perpWallDis);
 
-        int y0 = clamp((-lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH);
-        int y1 = clamp((lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH);
+        int y0 = clamp((-lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH-1);
+        int y1 = clamp((lineHeight / 2 + state.scrH / 2) + ((player.z + player.height) / perpWallDis * state.scrH), 0, state.scrH-1);
 
         // uint8_t a = clamp(perpWallDis*20.0f, 15, 255);
         // r_setVLine(x, y0, y1, r_rgba(0, 255, 150, a));
@@ -341,4 +347,50 @@ void r_render() {
 void r_destroy() {
     free(pixels);
     free(zBuffer);
+}
+
+void r_renderLevelEnd() {
+    SDL_SetRenderDrawBlendMode(state.renderer, SDL_BLENDMODE_ADD);
+    memset(pixels, 0xFFFF00FF, sizeof(uint32_t) * state.scrW * state.scrH);
+    SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
+    SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
+    struct image winScreen;
+    d_loadImage("../res/images/screens/level-complete.png", &winScreen);
+    SDL_RenderCopy(state.renderer, 
+        winScreen.texture,
+        NULL,
+        &fullScreen
+    );
+
+    SDL_RenderPresent(state.renderer);
+}
+
+void r_renderWin() {
+    SDL_SetRenderDrawBlendMode(state.renderer, SDL_BLENDMODE_BLEND);
+    memset(pixels, 0xFF3300FF, sizeof(uint32_t) * state.scrW * state.scrH);
+    SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
+    SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
+    struct image winScreen;
+    d_loadImage("../res/images/screens/you-won.png", &winScreen);
+    SDL_RenderCopy(state.renderer, 
+        winScreen.texture,
+        NULL,
+        &fullScreen
+    );
+    SDL_RenderPresent(state.renderer);
+}
+
+void r_renderJoke() {
+    SDL_SetRenderDrawBlendMode(state.renderer, SDL_BLENDMODE_BLEND);
+    memset(pixels, 0xFFFF00FF, sizeof(uint32_t) * state.scrW * state.scrH);
+    SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
+    SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
+    struct image winScreen;
+    d_loadImage("../res/images/screens/just-kidding.png", &winScreen);
+    SDL_RenderCopy(state.renderer, 
+        winScreen.texture,
+        NULL,
+        &fullScreen
+    );
+    SDL_RenderPresent(state.renderer);
 }

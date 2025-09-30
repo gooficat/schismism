@@ -79,8 +79,11 @@ void p_move_and_slide(struct player* e) {
     {
     char out = currentLevel.data[(int)floorf(newPos.y) * currentLevel.width + (int)floorf(newPos.x)];
     
-    if (currentLevel.data[(int)newPos.y * currentLevel.width + (int)newPos.x] != '0') {
+    if (out != '0') {
         if (out == '9') {
+            if (currentLevel.lastLevel) {
+                state.win = true;
+            }
             state.running = false;
             level++;
         }

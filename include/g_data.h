@@ -34,6 +34,7 @@ struct level {
 	uint32_t** sprites;
 	uint8_t spriteCount;
 	uint8_t id;
+	bool lastLevel;
 };
 
 extern struct level currentLevel;
