@@ -20,8 +20,8 @@ void d_init(const char* file) {
 		state.running = false;
 		return;
 	}
-	char lin[128];
-	fgets(lin, 128, f);
+	char lin[2048];
+	fgets(lin, 2048, f);
 	sscanf(lin, "w %hhu l %hhu f %hhu c %hhu s %hhu win %hhu", &currentLevel.width, &currentLevel.length, &currentLevel.floorTexture, &currentLevel.ceilTexture, &weaponManager.currentWeapon, &last);
 	printf("%hhu", last);
 	if (last) {
@@ -34,7 +34,7 @@ void d_init(const char* file) {
 	currentLevel.data = calloc(currentLevel.width * currentLevel.length, sizeof(char));
 	uint16_t dSiz = 0;
 	int x = 0, y = 0;
-	while(fgets(lin, 128, f)) {
+	while(fgets(lin, 2048, f)) {
 		char* data = lin;
 		int offset;
 		char n;
@@ -188,12 +188,12 @@ void d_init(const char* file) {
 
 void d_terminate() {
 	free(currentLevel.data);
-	for (int i = 1; i < weaponManager.weaponCount; i++) {
-		free(weaponManager.weapons[i].textures);
-		for (int j = 1; j < weaponManager.weapons[i].frameCount; j++) {
-			SDL_DestroyTexture(weaponManager.weapons[i].textures[j].texture);
-		}
-	}
+	// for (int i = 1; i < weaponManager.weaponCount; i++) {
+	// 	for (int j = 1; j < weaponManager.weapons[i].frameCount; j++) {
+	// 		SDL_DestroyTexture(weaponManager.weapons[i].textures[j].texture);
+	// 	}
+	// 	free(weaponManager.weapons[i].textures);
+	// }
 	free(weaponManager.weapons);
 	free(currentLevel.sprites);
 

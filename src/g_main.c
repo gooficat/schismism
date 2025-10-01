@@ -38,9 +38,11 @@ void g_update() {
 	   player.rot += player.rotSpeed * state.deltaTime;
 	}
 	float bobBy = player.bobFactor;
+	float bobAt = player.bobSpeed;
 	if (state.keys[SDL_SCANCODE_LSHIFT]) {
 		vel.x *= 2;
 		vel.y *= 2;
+		bobAt /= 4;
 		bobBy *= 2;
 	}
 	// if (state.keys[SDL_SCANCODE_LSHIFT]) {
@@ -103,12 +105,12 @@ void g_update() {
 		vel.y *= 0.7071f;
 	}
 	if (fabsf(player.vel.x )> player.accel * state.deltaTime || fabsf(player.vel.y) > player.accel * state.deltaTime) {
-		player.height = lerp(player.height, (sinf((player.pos.x + player.pos.y) * player.bobSpeed)) * bobBy + player.defaultHeight, player.bobEase);
+		player.height = lerp(player.height, (sinf((player.pos.x + player.pos.y) * bobAt)) * bobBy + player.defaultHeight, player.bobEase);
 	}
 	else {
 		player.height = lerp(player.height, player.defaultHeight, player.bobEase);
 	}
-	weaponManager.rect.y = state.scrH/2 + (player.height * state.scrH/4);
+	weaponManager.rect.y = state.scrH/2 + ((player.height + 0.15f) * state.scrH/4);
 	player.vel.x = lerp(player.vel.x, vel.x, player.accel);
 	player.vel.y = lerp(player.vel.y, vel.y, player.accel);
 	p_move_and_slide(&player);
@@ -139,13 +141,13 @@ int main(int argc, char** argv) {
 
 
 	player.speed = 2.0f;
-	player.rotSpeed = 1.75f;
-	player.accel = 0.2f;
-	player.bobFactor = 0.0075f;
-	player.bobSpeed = 3.0f;
+	player.rotSpeed = 1.9f;
+	player.accel = 0.05f;
+	player.bobFactor = 0.0045f;
+	player.bobSpeed = 4.0f;
 	player.bobEase = 0.05f;
 	player.radius = 0.2f;
-	player.defaultHeight = 0.1f;
+	player.defaultHeight = -0.1f;
 	player.health = 3;
 
 	weaponManager.swapDelay = 500.0;
@@ -157,7 +159,7 @@ int main(int argc, char** argv) {
 	state.targetFrameTime = 1.0/TARGET_FPS;
 	r_init();
 
-	level = 0;
+	level = 2;
 	levelStart:
 	char lvlName[] = "../res/levels/0.txt";
 	lvlName[14] = level + '0';
@@ -239,6 +241,7 @@ int main(int argc, char** argv) {
 	else if (level != initialLevel) {
 		bool startAgain = false;
 		r_renderLevelEnd();
+		d_terminate();
 		//goto levelStart;
 		while (!startAgain) {
 			while (SDL_PollEvent(&event)) {
