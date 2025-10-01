@@ -39,23 +39,48 @@ void e_move_and_slide(struct entity* e) {
     // };
     // return sqrtf(d.x * d.x + d.y * d.y); // pythagorean theorem
 
+float e_len(vec2_s v) {
+    return sqrtf(v.x * v.x + v.y * v.y);
+}
+    
+float e_dis(vec2_s a, vec2_s b) {
+    vec2_s d = {
+        a.x - b.x,
+        a.y - b.y
+    };
+    return e_len(d);
+}
 
-float e_dist_block(vec2_s c, float r, vec2_s b) {
-    vec2_s relativeCenter = {
-        c.x - b.x,
+
+float e_dist_block(vec2_s c, vec2_s b) {
+    // vec2_s relativeCenter = {
+    //     c.x - b.x,
+    //     c.y - b.y
+    // };
+    // vec2_s offsetFromCorner = {
+    //     abs(relativeCenter.x) - 0.25f,
+    //     abs(relativeCenter.y) - 0.25f
+    // };
+    // vec2_s mx = {
+    //     max(offsetFromCorner.x, 0),
+    //     max(offsetFromCorner.y, 0)
+    // };
+    // return min(max(offsetFromCorner.x, offsetFromCorner.y), 0)
+    //      + sqrtf(mx.x * mx.x + mx.y * mx.y)
+    //      - r;
+    vec2_s dist = {
+        c.x - b.x, 
         c.y - b.y
     };
-    vec2_s offsetFromCorner = {
-        abs(relativeCenter.x) - 0.5f,
-        abs(relativeCenter.y) - 0.5f
+    vec2_s clam_dist = {
+        clamp(dist.x, 0, 1),
+        clamp(dist.y, 0, 1)
     };
-    vec2_s mx = {
-        max(offsetFromCorner.x, 0),
-        max(offsetFromCorner.y, 0)
+    vec2_s closest = {
+        b.x + clam_dist.x,
+        b.y + clam_dist.y
     };
-    return min(max(offsetFromCorner.x, offsetFromCorner.y), 0)
-         + sqrtf(mx.x * mx.x + mx.y * mx.y)
-         - r;
+    return e_dis(closest, c);
 }
 
 bool e_dist_walls(vec2_s v, float r) {
@@ -66,8 +91,16 @@ bool e_dist_walls(vec2_s v, float r) {
         for (int x = c.x - tr; x <= c.x + tr; ++x) { //loop on x
             if (x < 0 || x >= currentLevel.width) continue; // if out of bounds on x
             if (currentLevel.data[y * currentLevel.width + x] != '0') { // if it is not an empty space
-                float d = e_dist_block(v, r, (vec2_s){x+0.5f, y+0.5f}); // check distance from block
-                if (d <= 0) return true; // return is colliding if inside the block at all
+                float d = e_dist_block(v, (vec2_s){x, y}); // check distance from block
+                if (d < r) return true; // return is colliding if inside the block at all
+            }
+            if (currentLevel.data[y * currentLevel.width + x] == '9') { // if it is not an empty space
+                float d = e_dist_block(v, (vec2_s){x+0.5f, y+0.5f}); // check distance from block
+                if (d < r) {
+                    state.running = false;
+                    level++;
+                    return true;
+                }
             }
         }
     }
@@ -88,19 +121,10 @@ void p_move_and_slide(struct player* e) {
     }
 }
 
-float e_dis(vec2_s a, vec2_s b) {
-    vec2_s d = {
-        a.x - b.x,
-        a.y - b.y
-    };
-    return sqrtf(d.x * d.x + d.y * d.y);
-}
 
 bool e_point_circle(vec2_s v, vec2_s c, float r) {
     float dis = e_dis(v, c);
-    printf("dist, %f\n", dis);
-    if (dis <= r) {
-        printf("in circle");
+    if (dis < r) {
         return true;
     }
     return false;
