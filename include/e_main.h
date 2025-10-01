@@ -16,6 +16,7 @@ struct entity {
 	float accel, decel;
 	uint8_t spriteId;
 	float radius;
+	float health;
 };
 
 struct player {
@@ -32,6 +33,7 @@ struct player {
 	float bobSpeed;
 	float bobEase;
 	float radius;
+	float health;
 };
 
 struct weapon {
@@ -46,8 +48,16 @@ struct weapon {
     double frameTime;
 	uint8_t frameCount;
 	bool pickedUp;
+	float range;
+	float damage;
 };
 
 void e_move_and_slide(struct entity* e);
 
 void p_move_and_slide(struct player* e);
+
+bool e_circle_line(vec2_s v, float r, vec2_s s, vec2_s e);
+
+bool e_point_circle(vec2_s v, vec2_s c, float r);
+
+float e_dis(vec2_s a, vec2_s b);

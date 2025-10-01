@@ -242,8 +242,10 @@ void r_render() {
             currentLevel.entities[e-1] = swp;
         }
         prevY = yDist;
+        // printf("%f health of entity %d\n", currentLevel.entities[e].health, e);
     }
     for (int e = 0; e < currentLevel.entityCount; e++) {
+        if (currentLevel.entities[e].health <= 0) continue;
         vec2_s spritePos = {
             currentLevel.entities[e].pos.x - player.pos.x,
             currentLevel.entities[e].pos.y - player.pos.y
@@ -334,7 +336,7 @@ void r_render() {
     SDL_UpdateTexture(renderTexture, NULL, pixels, state.scrW * sizeof(uint32_t));
     SDL_RenderCopy(state.renderer, renderTexture, NULL, NULL);
 
-    if (weaponManager.currentWeapon != UNARMED) {
+    if (weaponManager.currentWeapon != UNARMED && weaponManager.weapons[weaponManager.currentWeapon].pickedUp) {
         SDL_RenderCopy(state.renderer, 
             weaponManager.weapons[weaponManager.currentWeapon].textures[weaponManager.weapons[weaponManager.currentWeapon].frame].texture,
             NULL,

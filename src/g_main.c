@@ -49,19 +49,53 @@ void g_update() {
 	// if (state.keys[SDL_SCANCODE_SPACE]) {
 	//    player.z += player.speed * state.deltaTime;
 	// }
+	struct weapon *w = &weaponManager.weapons[weaponManager.currentWeapon];
 	if (state.keys[SDL_SCANCODE_RSHIFT] &&
-		!weaponManager.weapons[weaponManager.currentWeapon].firing) {
-		weaponManager.weapons[weaponManager.currentWeapon].firing = true;
-		weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
-		weaponManager.weapons[weaponManager.currentWeapon].frame = 1;
+		!w->firing &&
+		w->pickedUp) {
+		w->firing = true;
+		w->frameTime = SDL_GetTicks();
+		w->frame = 1;
 		vec2_s startRay = player.pos;
-
+		vec2_s endRay = {
+			player.pos.x + w->range * sin(player.rot), 
+			player.pos.y + w->range * cos(player.rot)
+		};
+		//printf("%f %f end ray\n", endRay.x, endRay.y);
+		vec2_s rPos = startRay;
+		float steps = e_dis(startRay, endRay) / 20.0f;
+		vec2_s dis = {
+			endRay.x - startRay.x,
+			endRay.y - startRay.y
+		};
+		vec2_s step = {
+			steps/(endRay.x - startRay.x),
+			steps/(endRay.y - startRay.y)
+		};
+		while (1) {
+			rPos.x += dis.x / 20.0f;
+			rPos.y += dis.y / 20.0f;
+			if (currentLevel.data[(int)rPos.y * currentLevel.width + (int)rPos.x] != '0') { //check if the rayPos is in a wall ('0' is an empty tile)
+				printf("hit wall at %d %d\n", (int)rPos.x, (int)rPos.y);
+				goto hitdone; // just to escape a double loop cleanly
+			}
+			for (int e = 0; e < currentLevel.entityCount; e++) { // loop every entity
+				if (e_point_circle(currentLevel.entities[e].pos, rPos, currentLevel.entities[e].radius)) { //if the ray pos inside an entity
+					currentLevel.entities[e].health -= 2;//reduce health
+ 					printf("hit! %f\n", currentLevel.entities[e].health);
+					goto hitdone;
+				}
+			}
+		}
+		hitdone:
 	}
 	if (state.keys[SDL_SCANCODE_RCTRL] &&
-		!weaponManager.weapons[weaponManager.currentWeapon].firing &&
+		!w->firing &&
 		(SDL_GetTicks() - weaponManager.swapTimer) > weaponManager.swapDelay) {
+		rptswapgun:
 		weaponManager.currentWeapon = (weaponManager.currentWeapon + 1) % weaponManager.weaponCount;
-		weaponManager.weapons[weaponManager.currentWeapon].frame = 0;
+		if (!weaponManager.weapons[weaponManager.currentWeapon].pickedUp) goto rptswapgun;
+		w->frame = 0;
 		weaponManager.swapTimer = SDL_GetTicks();
 	}
 	if (vel.x && vel.y) {
@@ -79,15 +113,15 @@ void g_update() {
 	player.vel.y = lerp(player.vel.y, vel.y, player.accel);
 	p_move_and_slide(&player);
 
-	if (weaponManager.weapons[weaponManager.currentWeapon].firing) {
-		if (SDL_GetTicks() - weaponManager.weapons[weaponManager.currentWeapon].frameTime >= weaponManager.weapons[weaponManager.currentWeapon].timePerFrame) {
-			if (!weaponManager.weapons[weaponManager.currentWeapon].frame) {
-				weaponManager.weapons[weaponManager.currentWeapon].firing = false;
-				weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
+	if (w->firing) {
+		if (SDL_GetTicks() - w->frameTime >= w->timePerFrame) {
+			if (!w->frame) {
+				w->firing = false;
+				w->frameTime = SDL_GetTicks();
 			} else {
-				weaponManager.weapons[weaponManager.currentWeapon].frame++;
-				weaponManager.weapons[weaponManager.currentWeapon].frame %= weaponManager.weapons[weaponManager.currentWeapon].frameCount;
-				weaponManager.weapons[weaponManager.currentWeapon].frameTime = SDL_GetTicks();
+				w->frame++;
+				w->frame %= w->frameCount;
+				w->frameTime = SDL_GetTicks();
 			}
 		}
 	}
@@ -112,6 +146,7 @@ int main(int argc, char** argv) {
 	player.bobEase = 0.05f;
 	player.radius = 0.2f;
 	player.defaultHeight = 0.1f;
+	player.health = 3;
 
 	weaponManager.swapDelay = 500.0;
 
@@ -219,7 +254,7 @@ int main(int argc, char** argv) {
 						state.keys[event.key.keysym.scancode] = false;
 						break;
 					default:
-						break;
+						break; //thick air, inverted earth
 				}
 			}
 		}

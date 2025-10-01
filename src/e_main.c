@@ -120,3 +120,35 @@ void p_move_and_slide(struct player* e) {
     // }
     }
 }
+
+float e_dis(vec2_s a, vec2_s b) {
+    vec2_s d = {
+        a.x - b.x,
+        a.y - b.y
+    };
+    return sqrtf(d.x * d.x + d.y * d.y);
+}
+
+bool e_point_circle(vec2_s v, vec2_s c, float r) {
+    float dis = e_dis(v, c);
+    printf("dist, %f\n", dis);
+    if (dis <= r) {
+        printf("in circle");
+        return true;
+    }
+    return false;
+}
+
+bool e_circle_line(vec2_s v, float r, vec2_s s, vec2_s e) {
+    float d1 = e_dis(v, s);
+    float d2 = e_dis(v, e);
+
+    float len = e_dis(s, e);
+
+    float buf = 0.1f;
+
+    if (d1 + d2 >= len - buf && d1 + d2 <= len + buf) {
+        return true;
+    }
+    return false;
+}

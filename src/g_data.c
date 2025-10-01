@@ -12,8 +12,9 @@ void d_loadImageSurface(const char* path, uint32_t** pixels, int res) {
 	SDL_FreeSurface(surface);
 }
 
-uint8_t w;
+uint8_t last;
 void d_init(const char* file) {
+	currentLevel = (struct level) { 0 };
 	FILE* f = fopen(file, "r");
 	if (!f) {
 		state.running = false;
@@ -21,9 +22,9 @@ void d_init(const char* file) {
 	}
 	char lin[128];
 	fgets(lin, 128, f);
-	sscanf(lin, "w %hhu l %hhu f %hhu c %hhu s %hhu win %hhu", &currentLevel.width, &currentLevel.length, &currentLevel.floorTexture, &currentLevel.ceilTexture, &weaponManager.currentWeapon, &w);
-	printf("%hhu", w);
-	if (w) {
+	sscanf(lin, "w %hhu l %hhu f %hhu c %hhu s %hhu win %hhu", &currentLevel.width, &currentLevel.length, &currentLevel.floorTexture, &currentLevel.ceilTexture, &weaponManager.currentWeapon, &last);
+	printf("%hhu", last);
+	if (last) {
 		currentLevel.lastLevel = true;
 	}
 	else {
@@ -49,7 +50,9 @@ void d_init(const char* file) {
 							.pos = {x+0.5f, y+0.5f},
 							.speed = 2.0f,
 							.accel = 0.3f,
-							.spriteId = 1
+							.spriteId = 1,
+							.radius = 0.15f,
+							.health = 3
 						};
 						break;
 					case 'Y':
@@ -59,7 +62,8 @@ void d_init(const char* file) {
 							.speed = 2.0f,
 							.accel = 0.3f,
 							.spriteId = 2,
-							
+							.radius = 0.4f,
+							.health = 5
 						};
 						break;
 					case 'U':
@@ -69,7 +73,8 @@ void d_init(const char* file) {
 							.speed = 2.0f,
 							.accel = 0.3f,
 							.spriteId = 3,
-
+							.radius = 0.3f,
+							.health = 7
 						};
 						break;
 					case 'I':
@@ -79,7 +84,8 @@ void d_init(const char* file) {
 							.speed = 2.0f,
 							.accel = 0.3f,
 							.spriteId = 4,
-
+							.radius = 0.2f,
+							.health = 2
 						};
 						break;
 					case 'O':
@@ -89,7 +95,8 @@ void d_init(const char* file) {
 							.speed = 2.0f,
 							.accel = 0.3f,
 							.spriteId = 5,
-							
+							.radius = 0.4f,
+							.health = 9
 						};
 						break;
 					case 'P':
@@ -99,7 +106,6 @@ void d_init(const char* file) {
 						goto noEntity;
 				}
 				printf("entity %c is at %d %d\n", n, x, y);
-				currentLevel.entityCount++;
 				noEntity:
 				currentLevel.data[dSiz++] = '0';
 			}
@@ -120,7 +126,10 @@ void d_init(const char* file) {
 
 	weaponManager.weapons = malloc(sizeof(struct weapon) * 3);
 	weaponManager.weaponCount = 3;
-
+	weaponManager.weapons[0] = (struct weapon){
+		.frameCount = 0,
+		.pickedUp = false
+	};
 	weaponManager.weapons[1] = (struct weapon){
 		.textures = malloc(sizeof(struct image) * 2),
 		.magSize = 2,
@@ -128,7 +137,9 @@ void d_init(const char* file) {
 		.firing = false,
 		.frame = 0,
 		.frameCount = 3,
-		.pickedUp = false
+		.pickedUp = false,
+		.range = 3,
+		.damage = 2
 	};
 	d_loadImage("../res/images/shotgun/pixil-frame-2.png", &weaponManager.weapons[1].textures[0]);
 	d_loadImage("../res/images/shotgun/pixil-frame-1.png", &weaponManager.weapons[1].textures[1]);
@@ -143,7 +154,9 @@ void d_init(const char* file) {
 		.firing = false,
 		.frame = 0,
 		.frameCount = 3,
-		.pickedUp = false
+		.pickedUp = false,
+		.range = 8,
+		.damage = 1
 	};
 	d_loadImage("../res/images/pistol/pixil-frame-0.png", &weaponManager.weapons[2].textures[0]);
 	d_loadImage("../res/images/pistol/pixil-frame-2.png", &weaponManager.weapons[2].textures[1]);
@@ -175,18 +188,16 @@ void d_init(const char* file) {
 
 void d_terminate() {
 	free(currentLevel.data);
-	for (int i = 0; i < weaponManager.weaponCount; i++) {
-		for (int j = 0; j < weaponManager.weapons[i].frameCount; j++) {
-			free(&weaponManager.weapons[i].textures[j]);
+	for (int i = 1; i < weaponManager.weaponCount; i++) {
+		free(weaponManager.weapons[i].textures);
+		for (int j = 1; j < weaponManager.weapons[i].frameCount; j++) {
+			SDL_DestroyTexture(weaponManager.weapons[i].textures[j].texture);
 		}
-		free(&weaponManager.weapons[i]);
 	}
-	for (int i = 0; i < currentLevel.spriteCount; i++) {
-		free(&currentLevel.sprites[i]);
-	}
-	for (int i = 0; i < currentLevel.textureCount; i++) {
-		free(&currentLevel.textures[i]);
-	}
+	free(weaponManager.weapons);
+	free(currentLevel.sprites);
+
+	free(currentLevel.textures);
 	free(currentLevel.entities);
 	IMG_Quit();
 }

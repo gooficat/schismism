@@ -30,7 +30,7 @@ extern struct game_state {
     double targetFrameTime;
     uint16_t scrW, scrH;
     bool win;
-    SDL_Texture* screens;
+    //SDL_Texture* screens;
 } state;
 
 extern struct weapon_manager {
