@@ -80,16 +80,11 @@ void p_move_and_slide(struct player* e) {
         e->pos.x + e->vel.x * cos(e->rot) + e->vel.y * sin(e->rot),
         e->pos.y + e->vel.y * cos(e->rot) - e->vel.x * sin(e->rot)
     };
-    if (e_dist_walls(newPos, e->radius)) {
-        if (e_dist_walls((vec2_s){newPos.x, e->pos.y}, e->radius)) {
-            e->pos.y = newPos.y;
-        }
-        else if (e_dist_walls((vec2_s){e->pos.x, newPos.y}, e->radius)) {
-            e->pos.x = newPos.x;
-        }
+    if (!e_dist_walls((vec2_s){e->pos.x, newPos.y}, e->radius)) {
+        e->pos.y = newPos.y;
     }
-    else {
-        e->pos = newPos;
+    if (!e_dist_walls((vec2_s){newPos.x, e->pos.y}, e->radius)) {
+        e->pos.x = newPos.x;
     }
 }
 
